@@ -1,0 +1,3753 @@
+<!DOCTYPE html>
+<html lang="en" style="background-color:#EBEBEB">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="robots" content="index, follow">
+  <meta name="theme-color" content="#1A1A1A">
+
+  <title>Noverty Management | Airbnb Management in Punta Cana</title>
+  <meta name="description" content="Premium Airbnb and short-term rental management for Cana Bay property owners in Punta Cana.">
+  <meta name="keywords" content="Airbnb Management Punta Cana, Airbnb property management Punta Cana, property management Cana Bay, short-term rental management Punta Cana, Airbnb management Cana Bay">
+
+  <link rel="canonical" href="https://noverty.com/">
+
+  <!-- Multi-language SEO -->
+  <link rel="alternate" hreflang="en" href="https://noverty.com/">
+  <link rel="alternate" hreflang="es" href="https://noverty.com/">
+  <link rel="alternate" hreflang="x-default" href="https://noverty.com/">
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Noverty">
+  <meta property="og:locale" content="en_US">
+  <meta property="og:locale:alternate" content="es_DO">
+  <meta property="og:title" content="Noverty Management | Airbnb Management in Punta Cana">
+  <meta property="og:description" content="Premium Airbnb and short-term rental management for Cana Bay property owners in Punta Cana.">
+  <meta property="og:url" content="https://noverty.com/">
+  <meta property="og:image" content="https://noverty.com/public/assets/images/hero/hero-web.png">
+  <meta property="og:image:alt" content="Noverty — Airbnb Management in Punta Cana">
+
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Noverty Management | Airbnb Management in Punta Cana">
+  <meta name="twitter:description" content="Premium Airbnb and short-term rental management for Cana Bay property owners in Punta Cana.">
+  <meta name="twitter:image" content="https://noverty.com/public/assets/images/hero/hero-web.png">
+
+  <!-- Structured data: Real Estate / Property Management -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "RealEstateAgent",
+    "name": "Noverty Management",
+    "alternateName": "Noverty",
+    "url": "https://noverty.com/",
+    "logo": "https://noverty.com/public/assets/logo/noverty-full.png",
+    "image": "https://noverty.com/public/assets/images/hero/hero-web.png",
+    "description": "Premium Airbnb management and property management services for Cana Bay owners in Punta Cana.",
+    "areaServed": [
+      {"@type": "Place", "name": "Cana Bay"},
+      {"@type": "Place", "name": "Punta Cana"},
+      {"@type": "Country", "name": "Dominican Republic"}
+    ],
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Punta Cana",
+      "addressCountry": "DO"
+    },
+    "contactPoint": {
+      "@type": "ContactPoint",
+      "telephone": "+1-809-750-7568",
+      "contactType": "customer service",
+      "areaServed": "DO",
+      "availableLanguage": ["en", "es"]
+    },
+    "founder": {
+      "@type": "Person",
+      "name": "Amarantha Gomez",
+      "jobTitle": "Founder & CEO"
+    }
+  }
+  </script>
+
+  <style>
+/* =====================================================
+   NOVERTY — DESIGN SYSTEM  (Light Edition)
+   =====================================================
+
+   COLOR SYSTEM — three source anchors:
+     #EBEBEB  →  Base (main background)
+     #272727  →  Ink  (primary text)
+     #857969  →  Accent (warm taupe)
+
+   SECTION RHYTHM (light → light → light → dark close):
+     Hero          — dark (solid)
+     Concept       — #F4F3EE  (section--deep)
+     How           — #EBEBEB  (section--base)
+     Problem       — #EBEBEB  (section--raised)
+     Solution      — #F4F3EE  (section--deep)
+     Why Us        — #F4F3EE  (section--deep)
+     Portfolio     — #EBEBEB  (section--base)
+     CTA           — #534E49  (section--void)
+     Footer        — #1A1A1A
+   ===================================================== */
+
+
+/* ─────────────────────────────────────────────────────
+   DESIGN TOKENS
+   ───────────────────────────────────────────────────── */
+:root {
+
+  /* ── BACKGROUND SCALE ─────────────────────────────── */
+  --bg-white:  #FAFAF7;
+  --bg-base:   #EBEBEB;
+  --bg-warm:   #F4F3EE;
+  --bg-subtle: #E5E3DC;
+  --bg-ink:    #534E49;
+  --bg-void:   #1A1A1A;
+
+  /* ── TEXT — on light backgrounds ───────────────────  */
+  --tx-primary:    #272727;
+  --tx-secondary:  rgba(39,39,39,0.58);
+  --tx-muted:      rgba(39,39,39,0.36);
+  --tx-ghost:      rgba(39,39,39,0.16);
+
+  /* ── TEXT — on dark backgrounds ────────────────────  */
+  --tx-on-dark:        #EBEBEB;
+  --tx-on-dark-dim:    rgba(235,235,235,0.52);
+  --tx-on-dark-muted:  rgba(235,235,235,0.28);
+
+  /* ── ACCENT ────────────────────────────────────────  */
+  --ac:        #857969;
+  --ac-dark:   #6e6050;
+  --ac-dim:    rgba(133,121,105,0.09);
+  --ac-border: rgba(133,121,105,0.35);
+
+  /* ── BORDERS ───────────────────────────────────────  */
+  --br:      rgba(39,39,39,0.08);
+  --br-mid:  rgba(39,39,39,0.14);
+  --br-dark:     rgba(235,235,235,0.08);
+  --br-dark-mid: rgba(235,235,235,0.14);
+
+  /* ── TYPOGRAPHY ────────────────────────────────────  */
+  --f-serif: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  --f-sans:  "Helvetica Neue", Helvetica, Arial, sans-serif;
+
+  /* ── SPACING SCALE ─────────────────────────────────  */
+  --sp-1:   8px;
+  --sp-2:  16px;
+  --sp-3:  24px;
+  --sp-4:  32px;
+  --sp-5:  48px;
+  --sp-6:  64px;
+  --sp-7:  80px;
+  --sp-8: 120px;
+  --sp-9: 160px;
+
+  /* ── LAYOUT ────────────────────────────────────────  */
+  --container-max: 1200px;
+  --container-pad: 48px;
+
+  /* ── MOTION ────────────────────────────────────────  */
+  --ease-out: cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+
+
+/* ─────────────────────────────────────────────────────
+   RESET
+   ───────────────────────────────────────────────────── */
+*, *::before, *::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+/* ─────────────────────────────────────────────────────
+   BASE
+   ───────────────────────────────────────────────────── */
+html {
+  scroll-behavior: smooth;
+  background-color: var(--bg-base);
+}
+
+body {
+  font-family: var(--f-sans);
+  font-weight: 400;
+  background-color: var(--bg-base);
+  color: var(--tx-secondary);
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  overflow-x: hidden;
+}
+
+h1, h2, h3 {
+  font-family: var(--f-serif);
+  font-weight: 500;
+  line-height: 1.05;
+  color: var(--tx-primary);
+}
+
+p {
+  font-family: var(--f-sans);
+  font-weight: 400;
+  line-height: 1.85;
+  color: var(--tx-secondary);
+}
+
+
+/* ─────────────────────────────────────────────────────
+   LAYOUT
+   ───────────────────────────────────────────────────── */
+.container {
+  max-width: var(--container-max);
+  margin: 0 auto;
+  padding: 0 var(--container-pad);
+}
+
+.container--center { text-align: center; }
+
+
+/* ─────────────────────────────────────────────────────
+   GRID CONTAINER — unified 3-column layout
+   ───────────────────────────────────────────────────── */
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 40px;
+  align-items: stretch;
+  margin-top: var(--sp-6);
+}
+
+.grid-container__item {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: var(--sp-5) var(--sp-4);
+  border: 1px solid var(--br);
+  min-width: 0;
+  height: 100%;
+}
+
+.grid-container__item--center {
+  align-items: center;
+  text-align: center;
+}
+
+@media (max-width: 768px) {
+  .grid-container {
+    gap: 8px;
+  }
+  .grid-container__item {
+    padding: 12px 10px;
+  }
+  .how__num {
+    font-size: 24px;
+    margin-bottom: 8px;
+  }
+  .how__title {
+    font-size: 10px;
+    letter-spacing: 0.06em;
+    margin-bottom: 6px;
+  }
+  .how__text {
+    font-size: 10px;
+    line-height: 1.5;
+  }
+  .metrics__value {
+    font-size: 24px;
+  }
+  .metrics__label {
+    font-size: 8px;
+    letter-spacing: 0.1em;
+  }
+}
+
+
+/* ─────────────────────────────────────────────────────
+   SECTION SYSTEM
+   ───────────────────────────────────────────────────── */
+.section {
+  padding: var(--sp-8) 0;
+}
+
+.section--base   { background-color: var(--bg-base);  }
+.section--raised { background-color: var(--bg-base);  }
+.section--deep   { background-color: var(--bg-warm);  }
+.section--void   { background-color: var(--bg-ink);   }
+.section--tight  { padding-top: var(--sp-5); }
+
+
+/* ─────────────────────────────────────────────────────
+   SECTION LABELS
+   ───────────────────────────────────────────────────── */
+.section__label {
+  display: block;
+  font-family: var(--f-sans);
+  font-size: 10px;
+  font-weight: 400;
+  letter-spacing: 0.32em;
+  text-transform: uppercase;
+  color: var(--tx-muted);
+  margin-bottom: var(--sp-5);
+}
+
+.section__label--light {
+  color: var(--tx-on-dark-muted);
+}
+
+
+/* ─────────────────────────────────────────────────────
+   SECTION HEADINGS
+   ───────────────────────────────────────────────────── */
+.section__heading {
+  font-family: var(--f-serif);
+  font-size: clamp(28px, 3.6vw, 44px);
+  font-weight: 400;
+  line-height: 1.22;
+  color: var(--tx-primary);
+  letter-spacing: -0.005em;
+}
+
+.section__heading--light {
+  color: var(--tx-on-dark);
+}
+
+
+/* ─────────────────────────────────────────────────────
+   BUTTON SYSTEM
+   ───────────────────────────────────────────────────── */
+.btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  font-family: var(--f-sans);
+  font-size: 13px;
+  font-weight: 500;
+  letter-spacing: 0.04em;
+  text-decoration: none;
+  padding: 18px 40px;
+  transition: all 0.4s var(--ease-out);
+  cursor: pointer;
+  white-space: nowrap;
+  -webkit-appearance: none;
+  appearance: none;
+  border-radius: 0;
+}
+
+.btn--light {
+  background: var(--tx-on-dark);
+  color: var(--bg-ink);
+  border: 1px solid transparent;
+}
+.btn--light:hover {
+  background: #ffffff;
+  transform: translateY(-2px);
+}
+
+.btn--outline-light {
+  background: transparent;
+  border: 1px solid var(--br-dark-mid);
+  color: var(--tx-on-dark);
+}
+.btn--outline-light:hover {
+  border-color: var(--ac-border);
+  background: rgba(133,121,105,0.12);
+  transform: translateY(-2px);
+}
+
+
+/* ─────────────────────────────────────────────────────
+   NAV
+   ───────────────────────────────────────────────────── */
+.nav {
+  position: fixed;
+  top: 0; left: 0; right: 0;
+  z-index: 100;
+  padding: 28px 0;
+  background-color: var(--bg-ink);
+  border-bottom: 1px solid rgba(235, 235, 235, 0.25);
+}
+
+.nav__inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.nav__logo {
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+}
+
+.nav__logo-img {
+  height: 26px;
+  width: auto;
+  object-fit: contain;
+  user-select: none;
+  -webkit-user-drag: none;
+}
+
+.nav__tagline {
+  font-family: var(--f-sans);
+  font-size: 11px;
+  font-weight: 300;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: rgba(235, 235, 235, 0.36);
+  line-height: 1;
+  white-space: nowrap;
+  margin-right: 24px;
+}
+
+
+/* ─────────────────────────────────────────────────────
+   HERO
+   ───────────────────────────────────────────────────── */
+.hero {
+  position: relative;
+  height: 100vh;
+  min-height: 680px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  background-color: var(--bg-void);
+}
+
+.hero__bg-fill {
+  position: absolute;
+  inset: 0;
+  background: url('public/assets/images/hero/hero.png') center / cover no-repeat;
+  background-color: var(--bg-void);
+}
+
+@media (min-width: 769px) {
+  .hero__bg-fill {
+    background-image: url('public/assets/images/hero/hero-web.png');
+  }
+}
+
+.hero__overlay {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  background: radial-gradient(
+    ellipse at 30% 50%,
+    transparent 0%,
+    rgba(26,26,26,0.4) 100%
+  );
+  pointer-events: none;
+  z-index: 1;
+}
+
+.hero__content,
+.hero__scroll,
+.hero__group {
+  z-index: 2;
+}
+
+.hero__group {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+.hero__content {
+  position: relative;
+  z-index: 2;
+  padding: 0 var(--container-pad);
+  max-width: var(--container-max);
+  margin: 0 auto;
+  width: 100%;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.hero__isotipo {
+  position: relative;
+  z-index: 2;
+  height: 36px;
+  width: auto;
+  object-fit: contain;
+  margin-bottom: var(--sp-5);
+  opacity: 0;
+  animation: fadeUp 0.9s var(--ease-out) 0.05s forwards;
+  user-select: none;
+  -webkit-user-drag: none;
+}
+
+.hero__eyebrow {
+  font-family: var(--f-sans);
+  font-size: 9px;
+  font-weight: 400;
+  letter-spacing: 0.32em;
+  text-transform: uppercase;
+  color: #EBEBEB;
+  margin-bottom: var(--sp-4);
+  line-height: 1;
+  opacity: 0;
+  animation: fadeUp 0.9s var(--ease-out) 0.15s forwards;
+}
+
+.hero__headline {
+  font-family: var(--f-serif);
+  font-size: clamp(42px, 6.5vw, 92px);
+  font-weight: 300;
+  color: var(--tx-on-dark);
+  line-height: 1.02;
+  letter-spacing: -0.02em;
+  margin-bottom: var(--sp-4);
+  max-width: 720px;
+  opacity: 0;
+  animation: fadeUp 1s var(--ease-out) 0.35s forwards;
+}
+.hero__headline em {
+  font-style: normal;
+  color: #EBEBEB;
+}
+
+.hero__sub {
+  font-family: var(--f-sans);
+  font-size: 11px;
+  font-weight: 400;
+  letter-spacing: 0.24em;
+  text-transform: uppercase;
+  color: #EBEBEB;
+  margin-bottom: var(--sp-6);
+  line-height: 2;
+  opacity: 0;
+  animation: fadeUp 1s var(--ease-out) 0.55s forwards;
+}
+
+
+.hero .btn {
+  opacity: 0;
+  animation: fadeUp 1s var(--ease-out) 0.75s forwards;
+}
+
+.hero__cta-btn {
+  font-size: 11px;
+  font-weight: 500;
+  letter-spacing: 0.14em;
+  padding: 14px 28px;
+}
+
+.hero__scroll {
+  position: absolute;
+  bottom: 44px;
+  left: var(--container-pad);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 14px;
+  z-index: 2;
+  opacity: 0;
+  animation: fadeIn 1.2s ease 1.2s forwards;
+}
+.hero__scroll span {
+  font-family: var(--f-sans);
+  font-size: 9px;
+  letter-spacing: 0.38em;
+  text-transform: uppercase;
+  color: var(--tx-on-dark-muted);
+  writing-mode: vertical-rl;
+}
+.hero__scroll-line {
+  width: 1px;
+  height: 54px;
+  background: linear-gradient(
+    to bottom,
+    rgba(235,235,235,0.18),
+    transparent
+  );
+}
+
+
+/* ─────────────────────────────────────────────────────
+   CONCEPT / CURATED SECTION
+   ───────────────────────────────────────────────────── */
+.curated__layout {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: clamp(48px, 7vw, 112px);
+  align-items: center;
+}
+
+.curated__text {
+  display: flex;
+  flex-direction: column;
+  gap: var(--sp-4);
+}
+
+.curated__headline {
+  font-family: var(--f-serif);
+  font-size: clamp(32px, 4vw, 56px);
+  font-weight: 300;
+  color: var(--tx-primary);
+  line-height: 1.1;
+  letter-spacing: -0.02em;
+  margin: 0;
+}
+
+.curated__sub {
+  font-family: var(--f-sans);
+  font-size: 14px;
+  font-weight: 400;
+  color: var(--tx-secondary);
+  line-height: 1.85;
+  margin: 0;
+}
+
+.curated__visual {
+  position: relative;
+}
+
+.curated__placeholder {
+  aspect-ratio: 3 / 4;
+  background: var(--bg-subtle);
+  width: 100%;
+}
+
+
+/* ─────────────────────────────────────────────────────
+   HOW IT WORKS
+   ───────────────────────────────────────────────────── */
+.how__header {
+  margin-bottom: var(--sp-8);
+}
+
+.how__headline {
+  font-family: var(--f-serif);
+  font-size: clamp(36px, 5vw, 68px);
+  font-weight: 300;
+  color: var(--tx-primary);
+  letter-spacing: -0.03em;
+  line-height: 1.05;
+  margin: 0 0 var(--sp-4);
+}
+
+.how__subline {
+  font-family: var(--f-sans);
+  font-size: clamp(13px, 1.2vw, 15px);
+  font-weight: 400;
+  color: var(--tx-secondary);
+  line-height: 1.8;
+  letter-spacing: 0.01em;
+  margin: 0;
+}
+
+
+.how__num {
+  font-family: var(--f-serif);
+  font-size: clamp(36px, 4vw, 56px);
+  font-weight: 300;
+  color: var(--ac);
+  letter-spacing: -0.03em;
+  line-height: 1;
+  margin-bottom: var(--sp-4);
+  opacity: 0.55;
+}
+
+.how__title {
+  font-family: var(--f-sans);
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--tx-primary);
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  margin: 0 0 var(--sp-3);
+}
+
+.how__text {
+  font-family: var(--f-sans);
+  font-size: 12px;
+  font-weight: 400;
+  color: var(--tx-secondary);
+  line-height: 1.75;
+  margin: 0;
+}
+
+
+
+/* ─────────────────────────────────────────────────────
+   METRICS
+   section--deep (#F4F3EE)
+   ───────────────────────────────────────────────────── */
+
+.metrics__value {
+  font-family: var(--f-serif);
+  font-size: clamp(36px, 5vw, 64px);
+  font-weight: 300;
+  color: var(--tx-primary);
+  letter-spacing: -0.03em;
+  line-height: 1;
+}
+
+.metrics__label {
+  font-family: var(--f-sans);
+  font-size: 12px;
+  font-weight: 400;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--tx-muted);
+  line-height: 1.4;
+}
+
+.metrics__sub {
+  font-family: var(--f-sans);
+  font-size: 14px;
+  font-weight: 400;
+  color: var(--tx-secondary);
+  line-height: 1.85;
+  margin-top: var(--sp-6);
+}
+
+.metrics__intro {
+  font-family: var(--f-sans);
+  font-size: 14px;
+  font-weight: 400;
+  color: var(--tx-secondary);
+  line-height: 1.85;
+  margin-top: var(--sp-3);
+  margin-bottom: var(--sp-7);
+}
+
+
+/* ─────────────────────────────────────────────────────
+   PERFORMANCE BLOCKS — borderless, editorial
+   ───────────────────────────────────────────────────── */
+.perf {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: clamp(40px, 6vw, 96px);
+  max-width: 960px;
+  margin: var(--sp-8) auto 0;
+  text-align: left;
+}
+
+.perf__block {
+  display: flex;
+  flex-direction: column;
+  gap: var(--sp-2);
+}
+
+.perf__title {
+  font-family: var(--f-serif);
+  font-size: clamp(16px, 1.6vw, 20px);
+  font-weight: 500;
+  color: var(--tx-primary);
+  letter-spacing: -0.005em;
+  line-height: 1.3;
+  margin: 0;
+}
+
+.perf__text {
+  font-family: var(--f-sans);
+  font-size: 13px;
+  font-weight: 400;
+  color: var(--tx-secondary);
+  line-height: 1.8;
+  margin: 0;
+  max-width: 280px;
+}
+
+.perf__lead {
+  margin: var(--sp-8) auto 0;
+  font-family: var(--f-serif);
+  font-size: clamp(16px, 1.5vw, 20px);
+  font-weight: 400;
+  color: var(--tx-primary);
+  letter-spacing: -0.005em;
+  line-height: 1.5;
+  max-width: 520px;
+}
+
+@media (max-width: 768px) {
+  .perf {
+    grid-template-columns: 1fr;
+    gap: var(--sp-5);
+    margin-top: var(--sp-6);
+  }
+  .perf__text {
+    max-width: 100%;
+  }
+  .perf__lead {
+    margin-top: var(--sp-6);
+  }
+}
+
+.intro__sub {
+  font-family: var(--f-sans);
+  font-size: clamp(14px, 1.2vw, 16px);
+  font-weight: 400;
+  color: var(--tx-secondary);
+  line-height: 1.85;
+  margin-top: var(--sp-4);
+  max-width: 620px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Intro heading — refined Apple-style typography */
+.intro__heading {
+  font-weight: 400;
+  font-size: clamp(28px, 3.6vw, 44px);
+  line-height: 1.25;
+  letter-spacing: -0.005em;
+  max-width: 720px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+/* ─────────────────────────────────────────────────────
+   EXPERIENCE — horizontal scroll, minimal icons
+   ───────────────────────────────────────────────────── */
+.experience__header {
+  text-align: center;
+  margin-bottom: var(--sp-8);
+}
+
+.exp__intro {
+  margin-top: var(--sp-4);
+}
+
+.exp-scroll {
+  position: relative;
+  margin: 0 calc(var(--container-pad) * -1);
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  scroll-snap-type: x mandatory;
+  scrollbar-width: none;
+}
+
+.exp-scroll::-webkit-scrollbar {
+  display: none;
+}
+
+.exp-scroll__track {
+  display: flex;
+  gap: var(--sp-3);
+  padding: var(--sp-2) var(--container-pad) var(--sp-5);
+}
+
+.exp-card {
+  appearance: none;
+  -webkit-appearance: none;
+  flex: 0 0 320px;
+  scroll-snap-align: start;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  text-align: left;
+  padding: var(--sp-6) var(--sp-5);
+  background: var(--bg-white);
+  border: 1px solid var(--br);
+  border-radius: 14px;
+  cursor: pointer;
+  font: inherit;
+  color: inherit;
+  transition:
+    transform 0.5s var(--ease-out),
+    box-shadow 0.5s var(--ease-out),
+    border-color 0.5s var(--ease-out);
+}
+
+.exp-card:hover {
+  transform: translateY(-4px);
+  border-color: rgba(39, 39, 39, 0.14);
+  box-shadow: 0 2px 8px rgba(39, 39, 39, 0.04), 0 14px 40px rgba(39, 39, 39, 0.07);
+}
+
+.exp-card:hover .exp-card__cue {
+  opacity: 1;
+  transform: translateX(2px);
+}
+
+.exp-card:focus-visible {
+  outline: 1px solid var(--ac);
+  outline-offset: 3px;
+}
+
+.exp-card__icon {
+  color: var(--ac);
+  margin-bottom: var(--sp-5);
+  opacity: 0.85;
+}
+
+.exp-card__title {
+  font-family: var(--f-serif);
+  font-size: clamp(18px, 1.8vw, 22px);
+  font-weight: 500;
+  color: var(--tx-primary);
+  letter-spacing: -0.01em;
+  line-height: 1.25;
+  margin: 0 0 var(--sp-3);
+}
+
+.exp-card__text {
+  font-family: var(--f-sans);
+  font-size: 13px;
+  font-weight: 400;
+  color: var(--tx-secondary);
+  line-height: 1.8;
+  margin: 0 0 var(--sp-4);
+}
+
+.exp-card__cue {
+  font-family: var(--f-sans);
+  font-size: 10px;
+  font-weight: 500;
+  letter-spacing: 0.28em;
+  text-transform: uppercase;
+  color: var(--ac);
+  margin-top: auto;
+  opacity: 0.7;
+  transition: opacity 0.4s ease, transform 0.4s var(--ease-out);
+}
+
+.exp__final {
+  margin-top: var(--sp-7);
+  text-align: center;
+  font-family: var(--f-serif);
+  font-size: clamp(18px, 1.6vw, 24px);
+  font-weight: 300;
+  color: var(--tx-primary);
+  letter-spacing: -0.01em;
+  line-height: 1.4;
+}
+
+@media (max-width: 768px) {
+  .experience__header {
+    margin-bottom: var(--sp-5);
+  }
+  .exp-card {
+    flex: 0 0 260px;
+    padding: var(--sp-5) var(--sp-4);
+  }
+  .exp__final {
+    margin-top: var(--sp-5);
+  }
+}
+
+
+/* ── Experience Modal ── */
+.exp-modal {
+  position: fixed;
+  inset: 0;
+  z-index: 4200;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.4s ease;
+}
+
+.exp-modal.is-active {
+  opacity: 1;
+  pointer-events: all;
+}
+
+.exp-modal__backdrop {
+  position: absolute;
+  inset: 0;
+  background: rgba(26, 26, 26, 0.72);
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+}
+
+.exp-modal__panel {
+  position: relative;
+  z-index: 1;
+  background: var(--bg-white);
+  width: calc(100% - var(--sp-4));
+  max-width: 620px;
+  max-height: 90vh;
+  overflow: hidden;
+  border-radius: 14px;
+  box-shadow: 0 30px 90px rgba(0, 0, 0, 0.28);
+  display: flex;
+  flex-direction: column;
+  transform: scale(0.96) translateY(12px);
+  opacity: 0;
+  transition: transform 0.45s var(--ease-out), opacity 0.45s ease;
+}
+
+.exp-modal.is-active .exp-modal__panel {
+  transform: scale(1) translateY(0);
+  opacity: 1;
+}
+
+.exp-modal__image {
+  width: 100%;
+  aspect-ratio: 16 / 10;
+  background: var(--bg-subtle);
+  background-size: cover;
+  background-position: center;
+  flex-shrink: 0;
+}
+
+/* Theme-specific image placeholders (soft gradients in brand tones) */
+.exp-modal__image[data-theme="beach"] {
+  background-image: linear-gradient(135deg, #a8c8d8 0%, #d7e4ea 40%, #ede3d3 100%);
+}
+.exp-modal__image[data-theme="golf"] {
+  background-image: linear-gradient(135deg, #9cb29a 0%, #bcc9a8 40%, #e8e0c8 100%);
+}
+.exp-modal__image[data-theme="hardrock"] {
+  background-image: linear-gradient(135deg, #3a3835 0%, #5a504a 50%, #857969 100%);
+}
+.exp-modal__image[data-theme="wellness"] {
+  background-image: linear-gradient(135deg, #e0d8c8 0%, #d4c9b4 50%, #b6a590 100%);
+}
+
+.exp-modal__close {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  z-index: 2;
+  appearance: none;
+  -webkit-appearance: none;
+  background: rgba(250, 250, 247, 0.92);
+  border: none;
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--tx-primary);
+  cursor: pointer;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
+  transition: background 0.25s ease, transform 0.25s var(--ease-out);
+}
+
+.exp-modal__close:hover {
+  background: #ffffff;
+  transform: scale(1.05);
+}
+
+.exp-modal__content {
+  padding: clamp(28px, 4vw, 48px) clamp(28px, 4vw, 48px) clamp(32px, 4vw, 52px);
+  overflow-y: auto;
+}
+
+.exp-modal__title {
+  font-family: var(--f-serif);
+  font-size: clamp(24px, 2.8vw, 34px);
+  font-weight: 500;
+  color: var(--tx-primary);
+  letter-spacing: -0.01em;
+  line-height: 1.2;
+  margin: 0 0 var(--sp-3);
+}
+
+.exp-modal__text {
+  font-family: var(--f-sans);
+  font-size: 15px;
+  font-weight: 400;
+  color: var(--tx-secondary);
+  line-height: 1.85;
+  margin: 0;
+  white-space: pre-line;
+}
+
+body.no-scroll { overflow: hidden; }
+
+@media (max-width: 768px) {
+  .exp-modal__panel {
+    max-height: 92vh;
+  }
+  .exp-modal__image {
+    aspect-ratio: 4 / 3;
+  }
+}
+
+.lead-modal__notice {
+  font-family: var(--f-sans);
+  font-size: 10px;
+  font-weight: 400;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: rgba(235, 235, 235, 0.42);
+  text-align: center;
+  padding: 0 clamp(24px, 5vw, 64px);
+  margin: 0 0 8px;
+}
+
+/* ─────────────────────────────────────────────────────
+   PROBLEM
+   ───────────────────────────────────────────────────── */
+.problems {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin-top: var(--sp-7);
+  border-top:  1px solid var(--br);
+  border-left: 1px solid var(--br);
+}
+
+.problem__item {
+  display: flex;
+  gap: var(--sp-4);
+  padding: var(--sp-6) var(--sp-5);
+  border-right:  1px solid var(--br);
+  border-bottom: 1px solid var(--br);
+  transition: background 0.35s ease;
+}
+.problem__item:hover { background: var(--ac-dim); }
+
+.problem__number {
+  font-family: var(--f-serif);
+  font-size: 12px;
+  font-weight: 400;
+  letter-spacing: 0.05em;
+  color: var(--ac);
+  flex-shrink: 0;
+  padding-top: 5px;
+}
+
+.problem__content h3 {
+  font-family: var(--f-serif);
+  font-size: 24px;
+  font-weight: 500;
+  color: var(--tx-primary);
+  margin-bottom: var(--sp-1);
+  line-height: 1.2;
+}
+.problem__content p {
+  font-size: 14px;
+  line-height: 1.9;
+  color: var(--tx-secondary);
+}
+
+
+/* ─────────────────────────────────────────────────────
+   SOLUTION
+   ───────────────────────────────────────────────────── */
+.solution__intro {
+  font-size: 16px;
+  font-weight: 400;
+  color: var(--tx-muted);
+  margin: 0 0 var(--sp-7);
+}
+
+.solution__steps {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  border-top:  1px solid var(--br);
+  border-left: 1px solid var(--br);
+}
+
+.solution__step {
+  padding: var(--sp-6) var(--sp-4);
+  border-right:  1px solid var(--br);
+  border-bottom: 1px solid var(--br);
+  transition: background 0.35s ease;
+}
+.solution__step:hover { background: var(--ac-dim); }
+
+.solution__step-num {
+  font-family: var(--f-sans);
+  font-size: 10px;
+  letter-spacing: 0.24em;
+  color: var(--ac);
+  margin-bottom: var(--sp-3);
+}
+
+.solution__step-label {
+  font-family: var(--f-serif);
+  font-size: 26px;
+  font-weight: 500;
+  color: var(--tx-primary);
+  margin-bottom: var(--sp-2);
+  line-height: 1.1;
+}
+
+.solution__step p {
+  font-size: 13px;
+  line-height: 2.0;
+  color: var(--tx-muted);
+}
+
+
+/* ─────────────────────────────────────────────────────
+   WHY US
+   ───────────────────────────────────────────────────── */
+.why__header {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: clamp(32px, 6vw, 96px);
+  align-items: start;
+  margin-bottom: var(--sp-8);
+}
+
+.why__headline {
+  font-family: var(--f-serif);
+  font-size: clamp(40px, 5.5vw, 76px);
+  font-weight: 300;
+  color: var(--tx-primary);
+  letter-spacing: -0.03em;
+  line-height: 1.0;
+  margin: 0;
+}
+
+.why__subtext {
+  font-family: var(--f-sans);
+  font-size: clamp(13px, 1.2vw, 15px);
+  font-weight: 400;
+  color: var(--tx-secondary);
+  line-height: 1.85;
+  letter-spacing: 0.01em;
+  margin: 0;
+  padding-top: 6px;
+}
+
+
+
+/* ─────────────────────────────────────────────────────
+   PORTFOLIO / PROPERTIES
+   ───────────────────────────────────────────────────── */
+.properties__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  margin-bottom: var(--sp-6);
+  gap: var(--sp-5);
+}
+
+.properties__note {
+  font-size: 13px;
+  font-weight: 300;
+  color: var(--tx-muted);
+  max-width: 240px;
+  text-align: right;
+  line-height: 1.75;
+}
+
+.properties__grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: var(--sp-3);
+  background-color: transparent;
+}
+
+.property__card {
+  background: var(--bg-white);
+  overflow: hidden;
+  transition:
+    transform    0.55s var(--ease-out),
+    box-shadow   0.55s var(--ease-out);
+}
+
+.property__card:hover {
+  transform: translateY(-4px);
+  box-shadow:
+    0 2px  6px rgba(39, 39, 39, 0.05),
+    0 8px 32px rgba(39, 39, 39, 0.09);
+}
+
+.property__img {
+  aspect-ratio: 4 / 3;
+  overflow: hidden;
+  background: var(--bg-subtle);
+  position: relative;
+}
+
+.property__img::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: rgba(39, 39, 39, 0.10);
+  transition: opacity 0.75s var(--ease-out);
+  pointer-events: none;
+}
+.property__card:hover .property__img::after {
+  opacity: 0;
+}
+
+.property__placeholder {
+  width: 100%;
+  height: 100%;
+  background: var(--bg-subtle);
+}
+
+.property__info {
+  padding: var(--sp-4);
+  border-top: 1px solid rgba(39, 39, 39, 0.06);
+}
+
+.property__location {
+  font-family: var(--f-sans);
+  font-size: 10px;
+  letter-spacing: 0.3em;
+  text-transform: uppercase;
+  color: var(--ac);
+  margin-bottom: var(--sp-1);
+}
+
+.property__name {
+  font-family: var(--f-serif);
+  font-size: 24px;
+  font-weight: 500;
+  color: var(--tx-primary);
+  margin-bottom: var(--sp-1);
+  line-height: 1.2;
+}
+
+.property__price {
+  font-family: var(--f-sans);
+  font-size: 13px;
+  font-weight: 400;
+  color: var(--tx-muted);
+  margin-bottom: var(--sp-3);
+}
+
+.property__link {
+  font-family: var(--f-sans);
+  font-size: 10px;
+  letter-spacing: 0.26em;
+  text-transform: uppercase;
+  color: var(--tx-muted);
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  transition: color 0.35s var(--ease-out);
+}
+.property__link span {
+  display: inline-block;
+  transition: transform 0.35s var(--ease-out);
+  font-size: 14px;
+  line-height: 1;
+}
+.property__link:hover { color: var(--ac); }
+.property__link:hover span { transform: translateX(6px); }
+
+
+/* ─────────────────────────────────────────────────────
+   LEADERSHIP
+   section--deep (#F4F3EE)
+   ───────────────────────────────────────────────────── */
+.leader {
+  display: block;
+  margin-top: var(--sp-7);
+  text-align: left;
+}
+
+.leader::after {
+  content: '';
+  display: block;
+  clear: both;
+}
+
+.leader__photo {
+  float: left !important;
+  display: block;
+  width: 320px;
+  height: 427px;
+  object-fit: cover;
+  margin: 0 40px 24px 0;
+  border-radius: 6px;
+  user-select: none;
+  -webkit-user-drag: none;
+  shape-outside: inset(0 round 6px);
+}
+
+.leader__name {
+  font-family: var(--f-serif);
+  font-size: clamp(28px, 3.5vw, 44px);
+  font-weight: 300;
+  color: var(--tx-primary);
+  letter-spacing: -0.02em;
+  line-height: 1.1;
+  margin: 0 0 var(--sp-2);
+}
+
+.leader__role {
+  display: block;
+  font-family: var(--f-sans);
+  font-size: 10px;
+  font-weight: 400;
+  letter-spacing: 0.3em;
+  text-transform: uppercase;
+  color: var(--ac);
+  margin-bottom: var(--sp-4);
+}
+
+.leader__bio {
+  font-family: var(--f-sans);
+  font-size: 14px;
+  font-weight: 400;
+  color: var(--tx-secondary);
+  line-height: 1.85;
+  margin: 0;
+}
+
+.leader__bio p {
+  margin: 0 0 var(--sp-3);
+}
+
+.leader__bio p:last-child {
+  margin-bottom: 0;
+}
+
+@media (max-width: 768px) {
+  .leader__photo {
+    float: left !important;
+    display: block;
+    width: 140px;
+    height: 186px;
+    object-fit: cover;
+    margin: 4px 18px 12px 0;
+    border-radius: 6px;
+    shape-outside: inset(0 round 6px);
+  }
+  .leader__name {
+    font-size: 22px;
+    line-height: 1.15;
+    margin: 0 0 6px;
+  }
+  .leader__role {
+    font-size: 9px;
+    letter-spacing: 0.22em;
+    margin-bottom: 14px;
+  }
+  .leader__bio {
+    font-size: 13px;
+    line-height: 1.7;
+  }
+  .leader__bio p {
+    margin: 0 0 12px;
+  }
+}
+
+
+/* ─────────────────────────────────────────────────────
+   CONTACT / CTA
+   ───────────────────────────────────────────────────── */
+.contact__layout {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: clamp(48px, 8vw, 120px);
+  align-items: start;
+}
+
+.contact__left {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.cta__heading {
+  margin-bottom: 0;
+  margin-top: var(--sp-4);
+}
+
+.cta__sub {
+  font-size: 15px;
+  font-weight: 400;
+  color: var(--tx-on-dark-dim);
+  margin-top: var(--sp-3);
+  margin-bottom: var(--sp-6);
+  line-height: 1.85;
+}
+
+.cta__actions {
+  display: flex;
+  gap: var(--sp-2);
+  flex-wrap: wrap;
+}
+
+.contact__form {
+  display: flex;
+  flex-direction: column;
+  gap: var(--sp-4);
+}
+
+.form__row {
+  display: flex;
+  flex-direction: column;
+  gap: var(--sp-4);
+}
+
+.form__row--2col {
+  flex-direction: row;
+  gap: var(--sp-3);
+}
+
+.form__row--2col .form__field {
+  flex: 1;
+}
+
+.form__field {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.form__label {
+  font-family: var(--f-sans);
+  font-size: 10px;
+  font-weight: 400;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--tx-on-dark-muted);
+}
+
+.form__input {
+  font-family: var(--f-sans);
+  font-size: 14px;
+  font-weight: 400;
+  color: var(--tx-on-dark);
+  background: rgba(235, 235, 235, 0.06);
+  border: none;
+  border-bottom: 1px solid rgba(235, 235, 235, 0.22);
+  padding: 12px 0;
+  outline: none;
+  width: 100%;
+  transition: border-color 0.3s ease, background 0.3s ease;
+  -webkit-appearance: none;
+  appearance: none;
+  border-radius: 0;
+}
+
+.form__input::placeholder {
+  color: rgba(235, 235, 235, 0.28);
+}
+
+.form__input:focus {
+  border-bottom-color: rgba(235, 235, 235, 0.65);
+  background: rgba(235, 235, 235, 0.09);
+}
+
+.form__select {
+  cursor: pointer;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='8' viewBox='0 0 12 8'%3E%3Cpath d='M1 1l5 5 5-5' stroke='rgba(235,235,235,0.45)' stroke-width='1.5' fill='none' stroke-linecap='round'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: right 4px center;
+  padding-right: 24px;
+}
+
+.form__select option {
+  background: #534E49;
+  color: #EBEBEB;
+}
+
+.form__textarea {
+  resize: vertical;
+  min-height: 100px;
+  padding: 12px 0;
+  line-height: 1.75;
+}
+
+.form__submit {
+  align-self: flex-start;
+  font-family: var(--f-sans);
+  font-size: 11px;
+  font-weight: 400;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: var(--bg-ink);
+  background: var(--tx-on-dark);
+  border: none;
+  padding: 18px 40px;
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.3s ease;
+  margin-top: var(--sp-2);
+}
+
+.form__submit:hover {
+  background: #ffffff;
+  transform: translateY(-2px);
+}
+
+
+/* ─────────────────────────────────────────────────────
+   MULTI-STEP LEAD FORM
+   ───────────────────────────────────────────────────── */
+.lead-modal {
+  position: fixed;
+  inset: 0;
+  z-index: 4000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.35s ease;
+}
+
+.lead-modal.is-active {
+  opacity: 1;
+  pointer-events: all;
+}
+
+.lead-modal__backdrop {
+  position: absolute;
+  inset: 0;
+  background: rgba(26, 26, 26, 0.88);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+}
+
+.lead-modal__panel {
+  position: relative;
+  z-index: 1;
+  background: var(--bg-ink);
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  animation: leadPanelIn 0.4s var(--ease-out);
+}
+
+@keyframes leadPanelIn {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+
+/* Top bar: progress + close */
+.lead-modal__bar {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  padding: 24px clamp(24px, 5vw, 64px) 20px;
+  flex-shrink: 0;
+}
+
+.lead-modal__track {
+  flex: 1;
+  height: 1px;
+  background: rgba(235, 235, 235, 0.1);
+}
+
+.lead-modal__fill {
+  height: 100%;
+  width: 0%;
+  background: rgba(235, 235, 235, 0.42);
+  transition: width 0.55s var(--ease-out);
+}
+
+.lead-modal__close {
+  background: none;
+  border: none;
+  color: var(--tx-on-dark-dim);
+  cursor: pointer;
+  padding: 6px;
+  line-height: 1;
+  flex-shrink: 0;
+  transition: color 0.22s ease;
+}
+.lead-modal__close:hover { color: var(--tx-on-dark); }
+
+/* Body — centered, one step visible */
+.lead-modal__body {
+  flex: 1;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  padding: clamp(36px, 5vw, 72px) clamp(24px, 8vw, 160px) clamp(24px, 3vw, 40px);
+  overflow-y: auto;
+}
+
+/* Steps */
+.lead-step {
+  display: none;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 100%;
+  max-width: 520px;
+}
+
+.lead-step.is-active {
+  display: flex;
+  animation: leadStepIn 0.45s var(--ease-out) forwards;
+}
+
+.lead-step.is-exiting {
+  display: flex;
+  animation: leadStepOut 0.28s ease forwards;
+  pointer-events: none;
+}
+
+@keyframes leadStepIn {
+  from { opacity: 0; transform: translateY(28px); }
+  to   { opacity: 1; transform: translateY(0);    }
+}
+
+@keyframes leadStepOut {
+  from { opacity: 1; transform: translateY(0);     }
+  to   { opacity: 0; transform: translateY(-22px); }
+}
+
+.lead-step__badge {
+  font-family: var(--f-sans);
+  font-size: 11px;
+  font-weight: 400;
+  letter-spacing: 0.05em;
+  color: var(--tx-on-dark-dim);
+  border: 1px solid rgba(235, 235, 235, 0.22);
+  border-radius: 4px;
+  padding: 4px 10px;
+  display: inline-flex;
+  align-items: center;
+  margin-bottom: 24px;
+}
+
+.lead-step__q {
+  font-family: var(--f-serif);
+  font-size: clamp(26px, 3.8vw, 48px);
+  font-weight: 400;
+  color: var(--tx-on-dark);
+  line-height: 1.18;
+  letter-spacing: -0.02em;
+  margin-bottom: clamp(20px, 3vw, 32px);
+}
+
+.lead-step__input {
+  font-family: var(--f-sans);
+  font-size: clamp(16px, 2vw, 22px);
+  font-weight: 400;
+  color: var(--tx-on-dark);
+  background: transparent;
+  border: none;
+  border-bottom: 1px solid rgba(235, 235, 235, 0.28);
+  padding: 12px 0;
+  width: 100%;
+  max-width: 480px;
+  outline: none;
+  transition: border-color 0.3s ease;
+  -webkit-appearance: none;
+  appearance: none;
+  border-radius: 0;
+}
+
+.lead-step__input::placeholder { color: rgba(235, 235, 235, 0.22); }
+.lead-step__input:focus { border-bottom-color: rgba(235, 235, 235, 0.65); }
+
+.lead-step__input.is-error {
+  border-bottom-color: rgba(255, 110, 110, 0.7);
+  animation: leadShake 0.38s ease;
+}
+
+@keyframes leadShake {
+  0%, 100% { transform: translateX(0);   }
+  25%       { transform: translateX(-7px); }
+  75%       { transform: translateX(7px);  }
+}
+
+.lead-step__select {
+  cursor: pointer;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='8' viewBox='0 0 12 8'%3E%3Cpath d='M1 1l5 5 5-5' stroke='rgba(235,235,235,0.45)' stroke-width='1.5' fill='none' stroke-linecap='round'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: right 4px center;
+  padding-right: 28px;
+}
+
+.lead-step__select option {
+  background: #534E49;
+  color: #EBEBEB;
+}
+
+.lead-step__textarea {
+  resize: vertical;
+  min-height: 80px;
+  line-height: 1.75;
+}
+
+/* Option buttons (readiness, timeline) */
+.lead-step__opts {
+  display: flex;
+  flex-direction: column;
+  gap: 9px;
+  width: 100%;
+  max-width: 480px;
+}
+
+.lead-step__opt {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  font-family: var(--f-sans);
+  font-size: 14px;
+  font-weight: 400;
+  letter-spacing: 0.02em;
+  color: rgba(235, 235, 235, 0.78);
+  background: transparent;
+  border: 1px solid rgba(235, 235, 235, 0.16);
+  border-radius: 6px;
+  padding: 18px 20px;
+  text-align: left;
+  cursor: pointer;
+  transition: color 0.2s ease, border-color 0.2s ease, background 0.2s ease;
+}
+
+.lead-step__opt:hover {
+  color: var(--tx-on-dark);
+  border-color: rgba(235, 235, 235, 0.36);
+  background: rgba(235, 235, 235, 0.05);
+}
+
+.lead-step__opt.is-selected {
+  color: var(--bg-ink);
+  background: var(--tx-on-dark);
+  border-color: var(--tx-on-dark);
+}
+
+.lead-step__opt-key {
+  font-family: var(--f-sans);
+  font-size: 10px;
+  font-weight: 400;
+  letter-spacing: 0.06em;
+  color: rgba(235, 235, 235, 0.45);
+  border: 1px solid rgba(235, 235, 235, 0.2);
+  border-radius: 3px;
+  width: 26px;
+  height: 26px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  transition: color 0.2s ease, border-color 0.2s ease;
+}
+
+.lead-step__opt:hover .lead-step__opt-key {
+  color: rgba(235, 235, 235, 0.6);
+  border-color: rgba(235, 235, 235, 0.36);
+}
+
+.lead-step__opt.is-selected .lead-step__opt-key {
+  color: rgba(83, 78, 73, 0.65);
+  border-color: rgba(83, 78, 73, 0.2);
+}
+
+/* Schedule step */
+.lead-step__sched {
+  display: flex;
+  flex-direction: column;
+  gap: var(--sp-4);
+  width: 100%;
+  max-width: 480px;
+}
+
+/* ── Inline Calendar — premium app style ── */
+.cal {
+  width: 100%;
+  max-width: 340px;
+  background: rgba(235, 235, 235, 0.04);
+  border: 1px solid rgba(235, 235, 235, 0.08);
+  border-radius: 16px;
+  padding: 24px;
+}
+
+.cal__header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.cal__month {
+  font-family: var(--f-sans);
+  font-size: 14px;
+  font-weight: 400;
+  letter-spacing: 0.04em;
+  color: var(--tx-on-dark);
+}
+
+.cal__nav {
+  appearance: none;
+  background: rgba(235, 235, 235, 0.06);
+  border: none;
+  border-radius: 50%;
+  color: rgba(235, 235, 235, 0.45);
+  width: 34px;
+  height: 34px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: color 0.25s ease, background 0.25s ease;
+}
+
+.cal__nav:hover {
+  color: var(--tx-on-dark);
+  background: rgba(235, 235, 235, 0.12);
+}
+
+.cal__weekdays {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 0;
+  margin-bottom: 6px;
+}
+
+.cal__weekday {
+  font-family: var(--f-sans);
+  font-size: 10px;
+  font-weight: 400;
+  letter-spacing: 0.06em;
+  color: rgba(235, 235, 235, 0.28);
+  text-align: center;
+  padding: 8px 0;
+}
+
+.cal__grid {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 4px;
+}
+
+.cal__day {
+  appearance: none;
+  background: none;
+  border: none;
+  font-family: var(--f-sans);
+  font-size: 13px;
+  font-weight: 400;
+  color: rgba(235, 235, 235, 0.55);
+  width: 100%;
+  aspect-ratio: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  border-radius: 50%;
+  transition: color 0.3s ease, background 0.3s ease, box-shadow 0.3s ease;
+}
+
+.cal__day:hover {
+  color: rgba(235, 235, 235, 0.9);
+  background: rgba(235, 235, 235, 0.07);
+}
+
+.cal__day.is-today {
+  color: var(--tx-on-dark);
+  background: rgba(235, 235, 235, 0.06);
+}
+
+.cal__day.is-selected {
+  color: var(--bg-ink);
+  background: rgba(235, 235, 235, 0.92);
+  font-weight: 500;
+  box-shadow: 0 2px 12px rgba(235, 235, 235, 0.15);
+}
+
+.cal__day.is-past {
+  color: rgba(235, 235, 235, 0.12);
+  pointer-events: none;
+  cursor: default;
+}
+
+.cal__day.is-empty {
+  pointer-events: none;
+}
+
+/* ── Time pills ── */
+.lead-step__times {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.lead-step__time {
+  appearance: none;
+  font-family: var(--f-sans);
+  font-size: 12px;
+  font-weight: 400;
+  letter-spacing: 0.04em;
+  color: rgba(235, 235, 235, 0.6);
+  background: rgba(235, 235, 235, 0.04);
+  border: 1px solid rgba(235, 235, 235, 0.12);
+  border-radius: 28px;
+  padding: 12px 22px;
+  cursor: pointer;
+  white-space: nowrap;
+  transition: color 0.3s ease, border-color 0.3s ease, background 0.3s ease, box-shadow 0.3s ease;
+}
+
+.lead-step__time:hover {
+  color: rgba(235, 235, 235, 0.88);
+  border-color: rgba(235, 235, 235, 0.25);
+  background: rgba(235, 235, 235, 0.07);
+}
+
+.lead-step__time.is-selected {
+  color: var(--bg-ink);
+  background: rgba(235, 235, 235, 0.88);
+  border-color: rgba(235, 235, 235, 0.88);
+  box-shadow: 0 2px 12px rgba(235, 235, 235, 0.12);
+  font-weight: 500;
+}
+
+/* Thanks step */
+.lead-step--thanks {
+  align-items: center;
+  text-align: center;
+}
+
+.lead-step__check {
+  color: rgba(235, 235, 235, 0.55);
+  margin-bottom: clamp(20px, 3vw, 32px);
+}
+
+.lead-step__sub {
+  font-family: var(--f-sans);
+  font-size: 14px;
+  font-weight: 400;
+  color: var(--tx-on-dark-dim);
+  line-height: 1.85;
+  max-width: 420px;
+}
+
+/* Bottom nav */
+.lead-modal__bottom {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 16px clamp(24px, 5vw, 64px) clamp(20px, 3vh, 36px);
+  flex-shrink: 0;
+  border-top: 1px solid rgba(235, 235, 235, 0.07);
+}
+
+.lead-modal__back {
+  width: 56px;
+  height: 56px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: none;
+  border: 1px solid rgba(235, 235, 235, 0.2);
+  border-radius: 8px;
+  color: var(--tx-on-dark-dim);
+  cursor: pointer;
+  flex-shrink: 0;
+  transition: color 0.2s ease, border-color 0.2s ease;
+  -webkit-appearance: none;
+  appearance: none;
+}
+
+.lead-modal__back:hover {
+  color: var(--tx-on-dark);
+  border-color: rgba(235, 235, 235, 0.42);
+}
+
+.lead-modal__action {
+  flex: 1;
+  height: 56px;
+  font-family: var(--f-sans);
+  font-size: 11px;
+  font-weight: 500;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--bg-ink);
+  background: var(--tx-on-dark);
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.25s ease;
+  -webkit-appearance: none;
+  appearance: none;
+}
+
+.lead-modal__action:hover { background: #ffffff; }
+
+@media (max-width: 768px) {
+  .lead-modal__bar    { padding: 18px 20px 16px; }
+  .lead-modal__body   { padding: 28px 20px 20px; }
+  .lead-modal__bottom { padding: 14px 20px 28px; }
+}
+
+
+/* ─────────────────────────────────────────────────────
+   FOOTER
+   ───────────────────────────────────────────────────── */
+.footer {
+  background: var(--bg-void);
+  border-top: 1px solid var(--br-dark);
+  padding: var(--sp-5) 0;
+  padding-bottom: 72px;
+}
+
+.footer__inner {
+  display: flex;
+  justify-content: center;
+}
+
+.footer__legal {
+  font-family: var(--f-sans);
+  font-size: 10px;
+  font-weight: 400;
+  color: var(--tx-on-dark-muted);
+  letter-spacing: 0.06em;
+  line-height: 1.9;
+  text-align: center;
+  max-width: 680px;
+}
+
+
+/* ─────────────────────────────────────────────────────
+   BOTTOM NAV
+   ───────────────────────────────────────────────────── */
+.bottom-nav {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 300;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0;
+  background: rgba(26, 26, 26, 0.92);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border-top: 1px solid rgba(235, 235, 235, 0.08);
+  padding: 0;
+}
+
+.bottom-nav__item {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 16px 0;
+  color: rgba(235, 235, 235, 0.35);
+  text-decoration: none;
+  transition: color 0.3s ease;
+  max-width: 80px;
+}
+
+.bottom-nav__item:hover {
+  color: rgba(235, 235, 235, 0.85);
+}
+
+.bottom-nav__item svg {
+  display: block;
+}
+
+
+
+/* ─────────────────────────────────────────────────────
+   FLOATING CHAT
+   ───────────────────────────────────────────────────── */
+.wa-chat {
+  position: fixed;
+  bottom: 72px;
+  right: 24px;
+  z-index: 400;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  text-decoration: none;
+  opacity: 0;
+  transform: translateY(12px);
+  animation: waChatIn 0.9s cubic-bezier(0.16,1,0.3,1) 1.4s forwards;
+  transition:
+    transform 0.35s cubic-bezier(0.16,1,0.3,1);
+}
+.wa-chat:hover {
+  transform: translateY(-2px);
+}
+
+.wa-chat__bubble {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  background: #ffffff;
+  color: var(--tx-primary);
+  padding: 8px 14px 8px 8px;
+  border-radius: 999px 999px 4px 999px;
+  max-width: 280px;
+  box-shadow:
+    0 1px 2px rgba(0,0,0,0.06),
+    0 8px 28px rgba(0,0,0,0.12);
+  transition: transform 0.35s cubic-bezier(0.16,1,0.3,1);
+}
+
+.wa-chat:hover .wa-chat__bubble {
+  transform: translateX(-2px);
+}
+
+.wa-chat__face {
+  flex-shrink: 0;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  overflow: hidden;
+  background: var(--bg-subtle);
+}
+
+.wa-chat__face img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.wa-chat__text {
+  font-family: var(--f-sans);
+  font-size: 13px;
+  font-weight: 400;
+  letter-spacing: 0.005em;
+  line-height: 1.3;
+  color: var(--tx-primary);
+  white-space: nowrap;
+}
+
+.wa-chat__icon {
+  position: relative;
+  flex-shrink: 0;
+  width: 52px;
+  height: 52px;
+  border-radius: 50%;
+  background: #25D366;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow:
+    0 1px 2px rgba(0,0,0,0.08),
+    0 6px 20px rgba(37, 211, 102, 0.35);
+  transition: transform 0.35s cubic-bezier(0.16,1,0.3,1), box-shadow 0.35s cubic-bezier(0.16,1,0.3,1);
+}
+
+.wa-chat__icon svg {
+  display: block;
+}
+
+.wa-chat:hover .wa-chat__icon {
+  transform: scale(1.05);
+  box-shadow:
+    0 1px 2px rgba(0,0,0,0.08),
+    0 10px 28px rgba(37, 211, 102, 0.45);
+}
+
+@keyframes waChatIn {
+  from { opacity: 0; transform: translateY(12px); }
+  to   { opacity: 1; transform: translateY(0);    }
+}
+
+
+/* ─────────────────────────────────────────────────────
+   ENTRY OVERLAY
+   ───────────────────────────────────────────────────── */
+body.no-scroll { overflow: hidden; }
+
+.entry {
+  position: fixed;
+  inset: 0;
+  z-index: 999;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  background: var(--bg-void);
+  opacity: 1;
+  transition: opacity 1.8s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.entry.entry--exiting {
+  opacity: 0;
+  pointer-events: none;
+}
+
+.entry__vignette {
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(
+    ellipse at center,
+    transparent 0%,
+    rgba(26,26,26,0.6) 100%
+  );
+  pointer-events: none;
+  z-index: 1;
+}
+
+.entry__content {
+  position: relative;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 0;
+  padding: 0 var(--sp-5);
+  max-width: 520px;
+  width: 100%;
+  margin-top: -6vh;
+}
+
+/* Language selection screen content */
+.entry__logo-img {
+  height: clamp(72px, 16vw, 140px);
+  width: auto;
+  object-fit: contain;
+  user-select: none;
+  -webkit-user-drag: none;
+}
+
+.entry__slogan {
+  font-family: var(--f-sans);
+  font-size: 10px;
+  font-weight: 400;
+  letter-spacing: 0.24em;
+  text-transform: uppercase;
+  color: rgba(235, 235, 235, 0.40);
+  margin-top: var(--sp-6);
+  margin-bottom: 0;
+  line-height: 1;
+}
+
+.entry__slogan--location {
+  margin-top: var(--sp-2);
+}
+
+.entry__divider {
+  display: block;
+  width: 1px;
+  height: 56px;
+  background: linear-gradient(to bottom, transparent, var(--ac-border), transparent);
+  margin: var(--sp-5) auto;
+}
+
+.entry__langs {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+
+.entry__lang {
+  appearance: none;
+  -webkit-appearance: none;
+  background: none;
+  border: none;
+  color: rgba(235, 235, 235, 0.55);
+  font-family: var(--f-sans);
+  font-size: 11px;
+  font-weight: 400;
+  letter-spacing: 0.32em;
+  text-transform: uppercase;
+  padding: 8px 4px;
+  cursor: pointer;
+  transition:
+    color 0.5s cubic-bezier(0.16, 1, 0.3, 1),
+    transform 0.5s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.entry__lang:hover {
+  color: #EBEBEB;
+  transform: translateY(-1px);
+}
+
+.entry__lang:active {
+  transform: translateY(0);
+  transition-duration: 0.1s;
+}
+
+.entry__lang-sep {
+  color: rgba(235, 235, 235, 0.18);
+  font-family: var(--f-sans);
+  font-size: 11px;
+  font-weight: 300;
+  user-select: none;
+}
+
+/* Language screen staggered entrance */
+.entry--lang .entry__content > * {
+  opacity: 0;
+  animation: entryFadeUp 1.6s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+.entry--lang .entry__content > *:nth-child(1) { animation-delay: 0.30s; }
+.entry--lang .entry__content > *:nth-child(2) { animation-delay: 1.60s; }
+.entry--lang .entry__content > *:nth-child(3) { animation-delay: 1.90s; }
+.entry--lang .entry__content > *:nth-child(4) { animation-delay: 2.30s; }
+.entry--lang .entry__content > *:nth-child(5) { animation-delay: 2.70s; }
+
+@keyframes entryFadeUp {
+  from { opacity: 0; transform: translateY(6px); }
+  to   { opacity: 1; transform: translateY(0);   }
+}
+
+
+.entry__lang:active {
+  transform: translateY(0);
+  transition-duration: 0.1s;
+}
+
+.entry__lang-sep {
+  color: rgba(235, 235, 235, 0.18);
+  font-family: var(--f-sans);
+  font-size: 11px;
+  font-weight: 300;
+  user-select: none;
+}
+
+
+/* ── Brand transition overlay ─── */
+.entry__transition {
+  position: fixed;
+  inset: 0;
+  z-index: 9999;
+  background: #534E49;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  animation: brandTransIn 0.28s ease-out forwards;
+  pointer-events: none;
+}
+
+.entry__transition--out {
+  animation: brandTransOut 0.36s ease-in forwards;
+}
+
+.entry__transition-logo {
+  font-family: var(--f-serif);
+  font-size: 28px;
+  font-weight: 600;
+  letter-spacing: 0.3em;
+  text-transform: uppercase;
+  color: var(--tx-on-dark);
+  animation: brandTransLogoText 1.05s ease-in-out forwards;
+}
+
+@keyframes brandTransIn {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+
+@keyframes brandTransOut {
+  from { opacity: 1; }
+  to   { opacity: 0; }
+}
+
+@keyframes brandTransLogoText {
+  0%   { opacity: 0;    transform: scale(1.00); }
+  20%  { opacity: 1;    transform: scale(1.00); }
+  55%  { opacity: 1;    transform: scale(1.08); }
+  80%  { opacity: 1;    transform: scale(1.00); }
+  100% { opacity: 1;    transform: scale(1.00); }
+}
+
+
+/* ─────────────────────────────────────────────────────
+   ANIMATIONS
+   ───────────────────────────────────────────────────── */
+@keyframes fadeUp {
+  from { opacity: 0; transform: translateY(22px); }
+  to   { opacity: 1; transform: translateY(0);    }
+}
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+
+.reveal {
+  opacity: 0;
+  transform: translateY(28px);
+  transition:
+    opacity   0.7s var(--ease-out),
+    transform 0.7s var(--ease-out);
+}
+.reveal.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.reveal-delay-1 { transition-delay: 0.08s; }
+.reveal-delay-2 { transition-delay: 0.16s; }
+.reveal-delay-3 { transition-delay: 0.24s; }
+.reveal-delay-4 { transition-delay: 0.32s; }
+
+
+/* ─────────────────────────────────────────────────────
+   RESPONSIVE — TABLET  <= 1024px
+   ───────────────────────────────────────────────────── */
+@media (max-width: 1024px) {
+  .solution__steps   { grid-template-columns: repeat(2, 1fr); }
+  .properties__grid  { grid-template-columns: repeat(2, 1fr); }
+
+  .property__card:hover {
+    transform: none;
+    box-shadow: none;
+  }
+
+  .properties__header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .properties__note {
+    text-align: left;
+    max-width: 360px;
+  }
+}
+
+
+/* ─────────────────────────────────────────────────────
+   RESPONSIVE — MOBILE  <= 768px
+   ───────────────────────────────────────────────────── */
+@media (max-width: 768px) {
+  :root { --container-pad: 24px; }
+
+  .section         { padding: var(--sp-7) 0; }
+
+  .nav             { padding: 20px 0; }
+  .nav__tagline    { font-size: 8px; letter-spacing: 0.12em; margin-right: 0; }
+  .nav__logo-img   { height: 20px; }
+
+  .hero {
+    justify-content: center;
+    padding-top: 0;
+    min-height: 580px;
+  }
+  .hero__group {
+    transform: translateY(-80px);
+  }
+  .hero__content      { padding: 0 var(--container-pad); }
+  .hero__scroll       { left: var(--container-pad); bottom: 36px; }
+
+  .hero__isotipo { margin-bottom: 24px; }
+
+  .hero__eyebrow { margin-bottom: 28px; }
+
+  .hero__headline {
+    font-size: clamp(22px, 6vw, 30px);
+    line-height: 1.08;
+    max-width: 100%;
+    margin-bottom: 22px;
+  }
+  .hero__sub {
+    font-size: 12px;
+    line-height: 1.3;
+    max-width: 95%;
+    margin: 0 auto 28px;
+    text-align: center;
+    letter-spacing: 3px;
+    white-space: nowrap;
+  }
+
+  /* Mobile section headings — clean single-line feel, no orphans */
+  .section__heading {
+    font-size: 22px;
+    line-height: 1.2;
+    max-width: 95%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+  }
+  .section__heading br { display: none; }
+  .intro__heading {
+    font-size: 22px;
+    line-height: 1.2;
+    max-width: 95%;
+  }
+  .intro__heading br { display: none; }
+
+  .curated__layout    { grid-template-columns: 1fr; gap: var(--sp-5); }
+  .curated__placeholder { aspect-ratio: 4 / 3; }
+
+  .how__header   { margin-bottom: var(--sp-6); }
+
+  .problems        { grid-template-columns: 1fr; margin-top: var(--sp-5); }
+  .problem__item   { padding: var(--sp-5) var(--sp-3); }
+
+  .solution__steps { grid-template-columns: 1fr; }
+  .solution__step  { padding: var(--sp-5) var(--sp-3); }
+
+  .properties__grid   { grid-template-columns: 1fr; gap: var(--sp-3); }
+  .properties__header { margin-bottom: var(--sp-5); }
+
+  .property__card:hover {
+    transform: none;
+    box-shadow: none;
+  }
+
+  .contact__layout   { grid-template-columns: 1fr; gap: var(--sp-6); }
+  .form__row--2col   { flex-direction: column; gap: var(--sp-4); }
+  .form__submit      { width: 100%; text-align: center; justify-content: center; }
+
+  .footer__legal {
+    font-size: 10px;
+    max-width: 100%;
+  }
+
+  .wa-chat          { bottom: 70px; right: 14px; gap: 8px; }
+  .wa-chat__text    { font-size: 12px; }
+  .wa-chat__bubble  { max-width: 220px; padding: 6px 12px 6px 6px; }
+  .wa-chat__face    { width: 28px; height: 28px; }
+  .wa-chat__icon    { width: 48px; height: 48px; }
+
+  .entry__content {
+    padding: 0 var(--sp-3);
+    max-width: 100%;
+  }
+  .entry__logo-img                { height: clamp(56px, 14vw, 100px); }
+  .entry__content .entry__tagline { margin-top: var(--sp-6); }
+  .entry__content .entry__divider { margin: var(--sp-4) 0; }
+
+}
+
+@media (max-width: 480px) {
+  .cta__actions { flex-direction: column; align-items: center; }
+}
+
+</style>
+</head>
+<body>
+
+  <!-- ─── LANGUAGE SELECTION ─── -->
+  <div class="entry entry--lang" id="entryLang">
+    <div class="entry__vignette"></div>
+    <div class="entry__content">
+      <img class="entry__logo-img" src="public/assets/logo/noverty-full.png" alt="Noverty Management — Airbnb Management in Punta Cana" draggable="false">
+      <p class="entry__slogan">Cana Bay Property Management</p>
+      <p class="entry__slogan entry__slogan--location">Punta Cana, Dominican Republic</p>
+      <span class="entry__divider" aria-hidden="true"></span>
+      <div class="entry__langs">
+        <button class="entry__lang" type="button" data-lang="en">English</button>
+        <span class="entry__lang-sep" aria-hidden="true">—</span>
+        <button class="entry__lang" type="button" data-lang="es">Español</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- ─── NAV ─── -->
+  <nav class="nav" id="nav">
+    <div class="nav__inner container">
+      <a href="#" class="nav__logo" aria-label="Noverty home"><img class="nav__logo-img" src="public/assets/logo/noverty-blanco.png" alt="Noverty" draggable="false"></a>
+      <span class="nav__tagline" data-i18n="nav_tagline">We manage what others can't.</span>
+    </div>
+  </nav>
+
+  <!-- ─── 01 HERO ─── -->
+  <section class="hero" id="hero">
+    <div class="hero__bg-fill"></div>
+    <div class="hero__overlay"></div>
+
+    <div class="hero__group">
+      <img class="hero__isotipo" src="public/assets/logo/noverty-iso.png" alt="" aria-hidden="true" draggable="false">
+
+      <div class="hero__content">
+        <p class="hero__eyebrow" data-i18n="hero_eyebrow">Cana Bay &nbsp;·&nbsp; Punta Cana</p>
+        <h1 class="hero__headline" data-i18n-html="hero_headline">
+          Cana Bay Is Premium.<br>
+          Your Property Should Be Too.
+        </h1>
+        <p class="hero__sub" data-i18n="hero_sub">Airbnb Management for Cana Bay.</p>
+        <button type="button" class="btn btn--light hero__cta-btn" data-i18n="hero_cta">SCHEDULE A MEETING</button>
+      </div>
+    </div>
+
+    <div class="hero__scroll">
+      <span>Scroll</span>
+      <div class="hero__scroll-line"></div>
+    </div>
+  </section>
+
+  <!-- ─── 02 HOW IT WORKS — section--base ─── -->
+  <section class="section section--base" id="how">
+    <div class="container">
+      <h2 class="section__heading" data-i18n="how_heading">How It Works</h2>
+      <div class="grid-container">
+        <div class="grid-container__item">
+          <span class="how__num">01</span>
+          <h3 class="how__title" data-i18n="how_s1_title">Review & Strategy</h3>
+          <p class="how__text" data-i18n="how_s1_text">We design Airbnb management in Punta Cana tailored to your Cana Bay property and its market dynamics.</p>
+        </div>
+        <div class="grid-container__item">
+          <span class="how__num">02</span>
+          <h3 class="how__title" data-i18n="how_s2_title">Setup & Launch</h3>
+          <p class="how__text" data-i18n="how_s2_text">We optimize and list your property for maximum visibility.</p>
+        </div>
+        <div class="grid-container__item">
+          <span class="how__num">03</span>
+          <h3 class="how__title" data-i18n="how_s3_title">Manage & Optimize</h3>
+          <p class="how__text" data-i18n="how_s3_text">We handle operations and improve performance continuously.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── 03 PERFORMANCE — section--deep ─── -->
+  <section class="section section--deep" id="metrics">
+    <div class="container container--center">
+      <h2 class="section__heading intro__heading" data-i18n-html="metrics_heading">Not Every Property in Cana Bay<br>Performs the Same.</h2>
+      <p class="metrics__intro" data-i18n-html="metrics_intro">That difference is not the property.<br>It's the system behind it.</p>
+
+      <div class="perf">
+        <div class="perf__block">
+          <h3 class="perf__title" data-i18n="perf_b1_title">Occupancy Optimization</h3>
+          <p class="perf__text" data-i18n="perf_b1_text">Maximized bookings through pricing and timing.</p>
+        </div>
+        <div class="perf__block">
+          <h3 class="perf__title" data-i18n="perf_b2_title">Revenue Performance</h3>
+          <p class="perf__text" data-i18n="perf_b2_text">Higher nightly rates through positioning.</p>
+        </div>
+        <div class="perf__block">
+          <h3 class="perf__title" data-i18n="perf_b3_title">Guest Experience</h3>
+          <p class="perf__text" data-i18n="perf_b3_text">Consistent stays that sustain performance.</p>
+        </div>
+      </div>
+
+      <p class="perf__lead" data-i18n="perf_lead">This is where most properties fall short.</p>
+    </div>
+  </section>
+
+  <!-- ─── LIFESTYLE LEVERAGE — section--base ─── -->
+  <section class="section section--deep section--tight" id="lifestyle">
+    <div class="container container--center">
+      <h2 class="section__heading intro__heading" data-i18n="lifestyle_heading">Built on Top of Cana Bay</h2>
+      <p class="intro__sub" data-i18n-html="lifestyle_sub">Beach club. Golf. Private access.<br>We turn every advantage into higher revenue.</p>
+    </div>
+  </section>
+
+  <!-- ─── EXPERIENCE / AMENITIES — section--deep ─── -->
+  <section class="section section--deep section--tight" id="experience">
+    <div class="container">
+      <div class="experience__header">
+        <h2 class="section__heading intro__heading" data-i18n="exp_heading">What to Experience in Cana Bay</h2>
+        <p class="intro__sub exp__intro" data-i18n-html="exp_intro">CANA BAY is not just a location.<br>It's a complete lifestyle experience built around the Caribbean.</p>
+      </div>
+
+      <div class="exp-scroll">
+        <div class="exp-scroll__track">
+
+          <!-- Block 1 — Beach Club -->
+          <button class="exp-card" type="button" data-exp="beach">
+            <div class="exp-card__icon" aria-hidden="true">
+              <svg width="28" height="28" viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M3 22c2-2 4-2 6 0s4 2 6 0 4-2 6 0 4 2 6 0 4-2 6 0"/>
+                <path d="M3 27c2-2 4-2 6 0s4 2 6 0 4-2 6 0 4 2 6 0 4-2 6 0"/>
+                <circle cx="22" cy="8" r="3"/>
+                <path d="M22 11v8M14 16l8 3M14 10l8-2"/>
+              </svg>
+            </div>
+            <h3 class="exp-card__title" data-i18n="exp_b1_title">Private Beach Club</h3>
+            <p class="exp-card__text" data-i18n="exp_b1_text">An exclusive beachfront space with infinity pool, panoramic terrace and private beach access.</p>
+            <span class="exp-card__cue" aria-hidden="true" data-i18n="exp_explore">Explore</span>
+          </button>
+
+          <!-- Block 2 — Golf -->
+          <button class="exp-card" type="button" data-exp="golf">
+            <div class="exp-card__icon" aria-hidden="true">
+              <svg width="28" height="28" viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M10 28V4l14 5-14 5"/>
+                <circle cx="10" cy="28" r="2.5"/>
+                <path d="M22 26.5c2 0 4-.7 4-2s-2-2-4-2"/>
+              </svg>
+            </div>
+            <h3 class="exp-card__title" data-i18n="exp_b2_title">Championship Golf</h3>
+            <p class="exp-card__text" data-i18n="exp_b2_text">An 18-hole championship golf course designed for world-class play.</p>
+            <span class="exp-card__cue" aria-hidden="true" data-i18n="exp_explore">Explore</span>
+          </button>
+
+          <!-- Block 3 — Hard Rock -->
+          <button class="exp-card" type="button" data-exp="hardrock">
+            <div class="exp-card__icon" aria-hidden="true">
+              <svg width="28" height="28" viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M12 24V6l14-2v18"/>
+                <circle cx="9" cy="24" r="3"/>
+                <circle cx="23" cy="22" r="3"/>
+              </svg>
+            </div>
+            <h3 class="exp-card__title" data-i18n="exp_b3_title">Hard Rock Lifestyle</h3>
+            <p class="exp-card__text" data-i18n="exp_b3_text">Dining, entertainment, casino and nightlife just minutes away.</p>
+            <span class="exp-card__cue" aria-hidden="true" data-i18n="exp_explore">Explore</span>
+          </button>
+
+          <!-- Block 4 — Wellness & Racquet -->
+          <button class="exp-card" type="button" data-exp="wellness">
+            <div class="exp-card__icon" aria-hidden="true">
+              <svg width="28" height="28" viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M16 28c-6-3-10-8-10-14 0-2 1-4 3-4 3 0 5 3 7 6 2-3 4-6 7-6 2 0 3 2 3 4 0 6-4 11-10 14z"/>
+                <path d="M16 28V14"/>
+              </svg>
+            </div>
+            <h3 class="exp-card__title" data-i18n="exp_b4_title">Wellness & Racquet Club</h3>
+            <p class="exp-card__text" data-i18n="exp_b4_text">Fitness, racquet sports and active living integrated into the resort lifestyle.</p>
+            <span class="exp-card__cue" aria-hidden="true" data-i18n="exp_explore">Explore</span>
+          </button>
+
+        </div>
+      </div>
+
+      <p class="exp__final" data-i18n="exp_final">And that's exactly what we optimize.</p>
+    </div>
+  </section>
+
+  <!-- ─── 04 THE CANA BAY SYSTEM — section--base ─── -->
+  <section class="section section--deep" id="why">
+    <div class="container">
+      <h2 class="section__heading intro__heading" data-i18n="why_heading">The Cana Bay Performance System</h2>
+      <div class="grid-container">
+        <div class="grid-container__item">
+          <span class="how__num">01</span>
+          <h3 class="how__title" data-i18n="why_b1_title">Positioning</h3>
+          <p class="how__text" data-i18n="why_b1_text">We transform your CANA BAY property into a premium-performing asset.</p>
+        </div>
+        <div class="grid-container__item">
+          <span class="how__num">02</span>
+          <h3 class="how__title" data-i18n="why_b2_title">Revenue Engineering</h3>
+          <p class="how__text" data-i18n="why_b2_text">Dynamic pricing and demand control tailored to CANA BAY occupancy behavior.</p>
+        </div>
+        <div class="grid-container__item">
+          <span class="how__num">03</span>
+          <h3 class="how__title" data-i18n="why_b3_title">Operational Control</h3>
+          <p class="how__text" data-i18n="why_b3_text">End-to-end execution inside a high-demand environment.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── 05 CTA — section--void ─── -->
+  <section class="section section--void" id="cta">
+    <div class="container container--center">
+      <h2 class="section__heading section__heading--light cta__heading intro__heading" data-i18n="cta_heading">Your Property in Cana Bay Should Be Performing.</h2>
+      <p class="cta__sub" data-i18n="cta_sub">Let's turn it into a real income stream.</p>
+      <a href="https://wa.me/18097223612?text=Hi,%20I%20would%20like%20more%20information%20about%20your%20Cana%20Bay%20property%20management%20service." target="_blank" rel="noopener" class="btn btn--light" data-i18n="cta_btn">Get Your Projection</a>
+    </div>
+  </section>
+
+  <!-- ─── 06 BEHIND THE BRAND — section--deep ─── -->
+  <section class="section section--deep" id="leadership">
+    <div class="container">
+      <h2 class="section__heading intro__heading" data-i18n="lead_heading">Behind the Brand</h2>
+      <div class="leader">
+        <img class="leader__photo" src="public/assets/images/sections/ceo.jpg" alt="Amarantha Gomez, Founder & CEO — Noverty Airbnb Management in Punta Cana" loading="lazy" draggable="false">
+        <h3 class="leader__name" data-i18n="lead_name">Amarantha Gomez</h3>
+        <span class="leader__role" data-i18n="lead_role">Founder & CEO — NOVERTY</span>
+        <div class="leader__bio" data-i18n-html="lead_bio">
+          <p>With over 8 years of experience in the short-term rental and luxury property space in Punta Cana, Amarantha Gomez has built a reputation for delivering consistent, high-performance results.</p>
+          <p>Her background includes working with recognized names such as Luxury Homes and Grupo Punta Cana, developing a deep understanding of both the operational and strategic side of property management.</p>
+          <p>Today, through Noverty's Cana Bay property management, her focus goes beyond simply managing properties. The objective is clear: to turn every asset into a high-performing investment through intelligent strategy, refined positioning, and a results-driven approach.</p>
+          <p>Because this is not about having someone take care of your property.</p>
+          <p>It's about performance.<br>It's about results.<br>It's about real income — money in your bank account.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── FOOTER ─── -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__inner">
+        <p class="footer__legal" data-i18n-html="footer_legal">NOVERTY operates independently and is not affiliated with the CANA BAY development or its administration. All content is presented by NOVERTY for informational and promotional purposes only. Any unauthorized use, reproduction, or distribution is strictly prohibited. NOVERTY &copy; 2026. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ─── FLOATING CHAT ─── -->
+  <a class="wa-chat" href="https://wa.me/18097507568?text=Hola,%20me%20gustar%C3%ADa%20m%C3%A1s%20informaci%C3%B3n%20sobre%20NOVERTY." target="_blank" rel="noopener" aria-label="Chat on WhatsApp">
+    <span class="wa-chat__bubble">
+      <span class="wa-chat__face" aria-hidden="true">
+        <img src="public/assets/images/sections/ceo.jpg" alt="" loading="lazy" draggable="false">
+      </span>
+      <span class="wa-chat__text" data-i18n="wa_text">Hi, I'm here to help.</span>
+    </span>
+    <span class="wa-chat__icon" aria-hidden="true">
+      <svg width="22" height="22" viewBox="0 0 24 24" fill="#ffffff">
+        <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+      </svg>
+    </span>
+  </a>
+
+  <!-- ─── MULTI-STEP LEAD FORM ─── -->
+  <div class="lead-modal" id="leadModal" role="dialog" aria-modal="true" aria-hidden="true">
+    <div class="lead-modal__backdrop" id="leadBackdrop"></div>
+    <div class="lead-modal__panel">
+
+      <!-- Top bar -->
+      <div class="lead-modal__bar">
+        <div class="lead-modal__track"><div class="lead-modal__fill" id="leadProgress"></div></div>
+        <button class="lead-modal__close" id="leadClose" aria-label="Close">
+          <svg width="18" height="18" viewBox="0 0 18 18" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"><line x1="3" y1="3" x2="15" y2="15"/><line x1="15" y1="3" x2="3" y2="15"/></svg>
+        </button>
+      </div>
+
+      <!-- CANA BAY notice -->
+      <p class="lead-modal__notice" data-i18n="lead_notice">This is exclusively for CANA BAY property owners.</p>
+
+      <!-- Steps -->
+      <div class="lead-modal__body">
+
+        <!-- Step 1: Name -->
+        <div class="lead-step" data-step="1">
+          <span class="lead-step__badge">01</span>
+          <p class="lead-step__q" data-i18n="sf_q1">What's your full name?</p>
+          <input class="lead-step__input" type="text" name="name" placeholder="Your name" autocomplete="name">
+        </div>
+
+        <!-- Step 2: Phone -->
+        <div class="lead-step" data-step="2">
+          <span class="lead-step__badge">02</span>
+          <p class="lead-step__q" data-i18n="lead_form_phone">Phone / WhatsApp</p>
+          <input class="lead-step__input" type="tel" name="phone" placeholder="+1 (000) 000 0000" autocomplete="tel">
+        </div>
+
+        <!-- Step 3: Email -->
+        <div class="lead-step" data-step="3">
+          <span class="lead-step__badge">03</span>
+          <p class="lead-step__q" data-i18n="sf_q2">What's your email?</p>
+          <input class="lead-step__input" type="email" name="email" placeholder="your@email.com" autocomplete="email">
+        </div>
+
+        <!-- Step 4: Property type -->
+        <div class="lead-step" data-step="4">
+          <span class="lead-step__badge">04</span>
+          <p class="lead-step__q" data-i18n="lead_form_type">Property Type</p>
+          <select class="lead-step__input lead-step__select" name="property_type">
+            <option value="" disabled selected data-i18n="lead_form_select">Select</option>
+            <option value="apartment" data-i18n="lead_form_opt_apt">Apartment / Condo</option>
+            <option value="villa" data-i18n="lead_form_opt_villa">Villa / House</option>
+            <option value="penthouse" data-i18n="lead_form_opt_ph">Penthouse</option>
+            <option value="multiple" data-i18n="lead_form_opt_multi">Multiple Units</option>
+          </select>
+        </div>
+
+        <!-- Step 5: Bedrooms -->
+        <div class="lead-step" data-step="5">
+          <span class="lead-step__badge">05</span>
+          <p class="lead-step__q" data-i18n="lead_form_bedrooms">Bedrooms</p>
+          <select class="lead-step__input lead-step__select" name="bedrooms">
+            <option value="" disabled selected data-i18n="lead_form_select">Select</option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4+">4+</option>
+          </select>
+        </div>
+
+        <!-- Step 6: Location -->
+        <div class="lead-step" data-step="6">
+          <span class="lead-step__badge">06</span>
+          <p class="lead-step__q" data-i18n="lead_form_location">Property Location</p>
+          <input class="lead-step__input" type="text" name="location" placeholder="Punta Cana, Bávaro...">
+        </div>
+
+        <!-- Step 7: Readiness -->
+        <div class="lead-step" data-step="7">
+          <span class="lead-step__badge">07</span>
+          <p class="lead-step__q" data-i18n="lead_form_readiness">Is your property ready for short-term rental?</p>
+          <div class="lead-step__opts">
+            <button class="lead-step__opt" type="button" data-name="readiness" data-value="already-listed">
+              <span class="lead-step__opt-key">A</span>
+              <span data-i18n="lead_form_r_listed">Already listed</span>
+            </button>
+            <button class="lead-step__opt" type="button" data-name="readiness" data-value="ready-not-listed">
+              <span class="lead-step__opt-key">B</span>
+              <span data-i18n="lead_form_r_ready">Ready but not listed</span>
+            </button>
+            <button class="lead-step__opt" type="button" data-name="readiness" data-value="preparing">
+              <span class="lead-step__opt-key">C</span>
+              <span data-i18n="lead_form_r_prep">Still preparing</span>
+            </button>
+            <button class="lead-step__opt" type="button" data-name="readiness" data-value="exploring">
+              <span class="lead-step__opt-key">D</span>
+              <span data-i18n="lead_form_r_explore">Just exploring</span>
+            </button>
+          </div>
+        </div>
+
+        <!-- Step 8: Timeline -->
+        <div class="lead-step" data-step="8">
+          <span class="lead-step__badge">08</span>
+          <p class="lead-step__q" data-i18n="lead_form_timeline">When would you like to start?</p>
+          <div class="lead-step__opts">
+            <button class="lead-step__opt" type="button" data-name="timeline" data-value="asap">
+              <span class="lead-step__opt-key">A</span>
+              <span data-i18n="lead_form_t_asap">ASAP</span>
+            </button>
+            <button class="lead-step__opt" type="button" data-name="timeline" data-value="30-days">
+              <span class="lead-step__opt-key">B</span>
+              <span data-i18n="lead_form_t_30d">Within 30 days</span>
+            </button>
+            <button class="lead-step__opt" type="button" data-name="timeline" data-value="1-3-months">
+              <span class="lead-step__opt-key">C</span>
+              <span data-i18n="lead_form_t_3m">1–3 months</span>
+            </button>
+            <button class="lead-step__opt" type="button" data-name="timeline" data-value="exploring">
+              <span class="lead-step__opt-key">D</span>
+              <span data-i18n="lead_form_t_explore">Just exploring</span>
+            </button>
+          </div>
+        </div>
+
+        <!-- Step 9: Schedule -->
+        <div class="lead-step" data-step="9">
+          <span class="lead-step__badge">09</span>
+          <p class="lead-step__q" data-i18n="lead_form_schedule">Select a preferred day and time for us to contact you.</p>
+          <div class="lead-step__sched">
+            <!-- Inline calendar -->
+            <div class="cal" id="leadCal">
+              <div class="cal__header">
+                <button class="cal__nav" id="calPrev" type="button" aria-label="Previous month">
+                  <svg width="14" height="14" viewBox="0 0 18 18" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"><path d="M12 3L6 9l6 6"/></svg>
+                </button>
+                <span class="cal__month" id="calMonth"></span>
+                <button class="cal__nav" id="calNext" type="button" aria-label="Next month">
+                  <svg width="14" height="14" viewBox="0 0 18 18" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"><path d="M6 3l6 6-6 6"/></svg>
+                </button>
+              </div>
+              <div class="cal__weekdays" id="calWeekdays"></div>
+              <div class="cal__grid" id="calGrid"></div>
+            </div>
+            <input type="hidden" name="preferred_date" id="calDateInput" value="">
+            <!-- Time options -->
+            <div class="lead-step__times">
+              <button class="lead-step__time" type="button" data-value="morning" data-i18n="lead_form_morning">Morning (9am–12pm)</button>
+              <button class="lead-step__time" type="button" data-value="afternoon" data-i18n="lead_form_afternoon">Afternoon (12pm–4pm)</button>
+              <button class="lead-step__time" type="button" data-value="evening" data-i18n="lead_form_evening">Evening (4pm–7pm)</button>
+            </div>
+            <input type="hidden" name="preferred_time" value="">
+          </div>
+        </div>
+
+        <!-- Confirmation -->
+        <div class="lead-step lead-step--thanks" data-step="done">
+          <svg class="lead-step__check" width="44" height="44" viewBox="0 0 44 44" fill="none" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"><circle cx="22" cy="22" r="18"/><path d="M14 22l6 6 10-12"/></svg>
+          <p class="lead-step__q" data-i18n="lead_form_thanks">We will contact you via WhatsApp within your selected time.</p>
+          <p class="lead-step__sub" data-i18n="lead_form_thanks_sub">A member of our team will reach out to discuss your property's potential.</p>
+        </div>
+
+      </div>
+
+      <!-- Bottom nav -->
+      <div class="lead-modal__bottom">
+        <button class="lead-modal__back" id="leadBack" aria-label="Back" hidden>
+          <svg width="16" height="16" viewBox="0 0 18 18" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3L6 9l6 6"/></svg>
+        </button>
+        <button class="lead-modal__action" id="leadAction" type="button" data-i18n="sf_continue">CONTINUE</button>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- ─── EXPERIENCE MODAL ─── -->
+  <div class="exp-modal" id="expModal" role="dialog" aria-modal="true" aria-hidden="true">
+    <div class="exp-modal__backdrop" id="expBackdrop"></div>
+    <div class="exp-modal__panel" role="document">
+      <button class="exp-modal__close" id="expClose" aria-label="Close">
+        <svg width="16" height="16" viewBox="0 0 18 18" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"><line x1="3" y1="3" x2="15" y2="15"/><line x1="15" y1="3" x2="3" y2="15"/></svg>
+      </button>
+      <div class="exp-modal__image" id="expImage" aria-hidden="true"></div>
+      <div class="exp-modal__content">
+        <h3 class="exp-modal__title" id="expTitle"></h3>
+        <p class="exp-modal__text" id="expText"></p>
+      </div>
+    </div>
+  </div>
+
+  <!-- ─── BOTTOM NAV ─── -->
+  <nav class="bottom-nav" id="bottomNav">
+    <a href="#hero" class="bottom-nav__item" aria-label="Home">
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" stroke="none"><path d="M12 3l9 7.5V21a1 1 0 0 1-1 1h-5v-6h-4v6H5a1 1 0 0 1-1-1V10.5L12 3z" opacity="0.85"/></svg>
+    </a>
+    <a href="#how" class="bottom-nav__item" aria-label="How it works">
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" stroke="none"><path d="M12 2a10 10 0 1 0 0 20 10 10 0 0 0 0-20zm0 15a1 1 0 1 1 0-2 1 1 0 0 1 0 2zm1.1-4.7c-.6.4-1.1.8-1.1 1.2a.75.75 0 1 1-1.5 0c0-1.2.9-1.9 1.6-2.4.6-.4 1-.7 1-1.3a1.5 1.5 0 0 0-3 0 .75.75 0 1 1-1.5 0 3 3 0 1 1 4.5 2.5z" opacity="0.85"/></svg>
+    </a>
+    <a href="#metrics" class="bottom-nav__item" aria-label="Performance">
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" stroke="none"><rect x="3" y="14" width="4" height="8" rx="1" opacity="0.85"/><rect x="10" y="8" width="4" height="14" rx="1" opacity="0.85"/><rect x="17" y="3" width="4" height="19" rx="1" opacity="0.85"/></svg>
+    </a>
+    <a href="#why" class="bottom-nav__item" aria-label="Why Noverty">
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" stroke="none"><path d="M12 2l2.9 6.26L22 9.27l-5 4.87L18.18 21 12 17.77 5.82 21 7 14.14l-5-4.87 7.1-1.01L12 2z" opacity="0.85"/></svg>
+    </a>
+    <a href="#leadership" class="bottom-nav__item" aria-label="Leadership">
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" stroke="none"><circle cx="12" cy="7" r="4.5" opacity="0.85"/><path d="M4 21v-1.5C4 16.5 7.5 14 12 14s8 2.5 8 5.5V21a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1z" opacity="0.85"/></svg>
+    </a>
+  </nav>
+
+  <script>
+/* =====================================================
+   NOVERTY — INTERACTIONS + I18N
+   ===================================================== */
+
+(function () {
+  'use strict';
+
+  /* ─── TRANSLATIONS ─── */
+  var T = {
+    en: {
+      nav_tagline:    'Exclusively for CANA BAY owners.',
+      hero_eyebrow:   'Cana Bay\u00a0\u00b7\u00a0Punta Cana',
+      hero_headline:  'Cana Bay Is Premium.<br>Your Property Should Be Too.',
+      hero_sub:       'Airbnb Management for Cana Bay.',
+      hero_cta:       'SCHEDULE A MEETING',
+      wa_text:        'Hi, I\u2019m here to help.',
+      footer_legal:   'NOVERTY operates independently and is not affiliated with the CANA BAY development or its administration. All content is presented by NOVERTY for informational and promotional purposes only. Any unauthorized use, reproduction, or distribution is strictly prohibited. NOVERTY &copy; 2026. All rights reserved.',
+      intro_heading:  'Cana Bay Is Built for Lifestyle.<br>We Build It for Performance.',
+      intro_sub:      'Most properties are listed.<br>Very few are optimized.',
+      lifestyle_heading: 'Built on Top of Cana Bay',
+      lifestyle_sub:  'Beach club. Golf. Private access.<br>We turn every advantage into higher revenue.',
+      exp_heading:    'What to Experience in Cana Bay',
+      exp_intro:      'Cana Bay is not just a location.<br>It\u2019s a complete lifestyle experience built around the Caribbean.',
+      exp_explore:    'Explore',
+      exp_b1_title:   'Private Beach Club',
+      exp_b1_text:    'An exclusive beachfront space with infinity pool, panoramic terrace and private beach access.',
+      exp_b1_modal_title: 'Private Beach Club',
+      exp_b1_modal_text:  'The social heart of Cana Bay.\n\nA refined beachfront setting with infinity pool, panoramic views, private beach access and a more elevated way to spend the day.',
+      exp_b2_title:   'Championship Golf',
+      exp_b2_text:    'An 18-hole championship golf course designed for world-class play.',
+      exp_b2_modal_title: 'Championship Golf',
+      exp_b2_modal_text:  'Home to the Hard Rock Golf Club at Cana Bay, this 18-hole championship course was designed by Nicklaus Golf and built into the landscape of the community.',
+      exp_b3_title:   'Hard Rock Lifestyle',
+      exp_b3_text:    'Dining, entertainment, casino and nightlife just minutes away.',
+      exp_b3_modal_title: 'Hard Rock Lifestyle',
+      exp_b3_modal_text:  'From restaurants and entertainment to casino and nightlife, the Hard Rock experience adds another layer of energy to the Cana Bay environment.',
+      exp_b4_title:   'Wellness & Racquet Club',
+      exp_b4_text:    'Fitness, racquet sports and active living integrated into the resort lifestyle.',
+      exp_b4_modal_title: 'Wellness & Racquet Club',
+      exp_b4_modal_text:  'An active side of Cana Bay shaped by movement, wellness and private-club energy, with racquet facilities and a more balanced everyday rhythm.',
+      exp_final:      'And that\u2019s exactly what we optimize.',
+      excl_heading:   'We Don\u2019t Manage Everywhere.<br>We Dominate Where It Matters.',
+      excl_sub:       'Focused exclusively on Cana Bay.',
+      emo_heading:    'You Own in Cana Bay.<br>We Make It Perform Like It Should.',
+      emo_sub:        'No stress. No operational noise. Just performance inside Cana Bay.',
+      lead_notice:    'This is exclusively for Cana Bay property owners.',
+
+      sf_intro_q:     'Let\u2019s explore your<br><em>property\u2019s potential.</em>',
+      sf_intro_sub:   'We\u2019ll ask a few questions to understand your goals and show you what\u2019s possible with professional management.',
+      sf_q1:          'What\u2019s your full name?',
+      sf_q2:          'What\u2019s your email?',
+      sf_q3:          'Your phone number?',
+      sf_q4:          'What type of property do you own?',
+      sf_q5:          'Is your property currently listed?',
+      sf_q6:          'When would you like to get started?',
+      sf_q7:          'We will reach out to continue the process.',
+      sf_consent_sub: 'Do you agree?',
+      sf_thanks:      'We\u2019ll be in touch.',
+      sf_thanks_sub:  'Thank you for sharing your goals with us. A member of our team will reach out shortly to discuss your property\u2019s potential.',
+      sf_hint_choice: 'Select the option that best fits',
+      sf_apartment:   'Apartment / Condo',
+      sf_house:       'House / Villa',
+      sf_multiple:    'Multiple Properties',
+      sf_underperform:'Yes, but underperforming',
+      sf_want_more:   'Yes, doing well but want more',
+      sf_not_listed:  'Not yet listed',
+      sf_exploring:   'Just exploring options',
+      sf_asap:        'As soon as possible',
+      sf_1m:          'Within a month',
+      sf_3m:          'Within 3 months',
+      sf_explore:     'Just exploring',
+
+      sf_begin:       'BEGIN',
+      sf_continue:    'CONTINUE',
+      sf_accept:      'ACCEPT',
+      sf_consent_yes: 'YES, I AGREE',
+      sf_close_btn:   'CLOSE',
+      how_label:      '02 \u2014 How It Works',
+      how_heading:    'How It Works',
+      how_s1_title:   'Review & Strategy',
+      how_s1_text:    'We design Airbnb management in Punta Cana tailored to your Cana Bay property and its market dynamics.',
+      how_s2_title:   'Setup & Launch',
+      how_s2_text:    'We optimize and list your property for maximum visibility and premium positioning.',
+      how_s3_title:   'Manage & Optimize',
+      how_s3_text:    'We handle operations and improve performance continuously.',
+      metrics_heading:'Not Every Property in Cana Bay<br>Performs the Same.',
+      metrics_intro:  'That difference is not the property.<br>It\u2019s the system behind it.',
+      metrics_m1:     'Occupancy Optimization',
+      metrics_m2:     'Revenue Performance',
+      metrics_m3:     'Guest Experience',
+      metrics_v3:     '03',
+      perf_lead:      'This is where most properties fall short.',
+      perf_b1_title:  'Occupancy Optimization',
+      perf_b1_text:   'Maximized bookings through pricing and timing.',
+      perf_b2_title:  'Revenue Performance',
+      perf_b2_text:   'Higher nightly rates through positioning.',
+      perf_b3_title:  'Guest Experience',
+      perf_b3_text:   'Consistent stays that sustain performance.',
+      why_heading:    'The Cana Bay Performance System',
+      why_b1_title:   'Positioning',
+      why_b1_text:    'We transform your Cana Bay property into a premium-performing asset.',
+      why_b2_title:   'Revenue Engineering',
+      why_b2_text:    'Dynamic pricing and demand control tailored to Cana Bay occupancy behavior.',
+      why_b3_title:   'Operational Control',
+      why_b3_text:    'End-to-end execution inside a high-demand environment.',
+      cta_heading:    'Your Property in Cana Bay Should Be Performing.',
+      cta_sub:        'Let\u2019s turn it into a real income stream.',
+      cta_btn:        'Get Your Projection',
+      lead_label:     '06 \u2014 Leadership',
+      lead_name:      'Amarantha Gomez',
+      lead_role:      'Founder & CEO \u2014 NOVERTY',
+      lead_heading:   'Behind the Brand',
+      lead_bio:       '<p>With over 8 years of experience in the short-term rental and luxury property space in Punta Cana, Amarantha Gomez has built a reputation for delivering consistent, high-performance results.</p><p>Her background includes working with recognized names such as Luxury Homes and Grupo Punta Cana, developing a deep understanding of both the operational and strategic side of property management.</p><p>Today, through Noverty\u2019s Cana Bay property management, her focus goes beyond simply managing properties. The objective is clear: to turn every asset into a high-performing investment through intelligent strategy, refined positioning, and a results-driven approach.</p><p>Because this is not about having someone take care of your property.</p><p>It\u2019s about performance.<br>It\u2019s about results.<br>It\u2019s about real income \u2014 money in your bank account.</p>',
+      lead_form_title:   'Let\u2019s explore your property\u2019s potential.',
+      lead_form_sub:     'Tell us about your property and goals. We\u2019ll get back to you within 24 hours.',
+      lead_form_name:    'Full Name',
+      lead_form_phone:   'Phone / WhatsApp',
+      lead_form_email:   'Email',
+      lead_form_type:    'Property Type',
+      lead_form_select:  'Select',
+      lead_form_opt_apt: 'Apartment / Condo',
+      lead_form_opt_villa:'Villa / House',
+      lead_form_opt_ph:  'Penthouse',
+      lead_form_opt_multi:'Multiple Units',
+      lead_form_bedrooms:'Bedrooms',
+      lead_form_location:'Property Location',
+      lead_form_status:  'Current Status',
+      lead_form_opt_listed:'Already listed on Airbnb',
+      lead_form_opt_notlisted:'Not yet listed',
+      lead_form_opt_other:'Listed elsewhere',
+      lead_form_readiness:'Is your property ready for short-term rental?',
+      lead_form_r_listed: 'Already listed',
+      lead_form_r_ready:  'Ready but not listed',
+      lead_form_r_prep:   'Still preparing',
+      lead_form_r_explore:'Just exploring',
+      lead_form_timeline: 'When would you like to start?',
+      lead_form_t_asap:   'ASAP',
+      lead_form_t_30d:    'Within 30 days',
+      lead_form_t_3m:     '1\u20133 months',
+      lead_form_t_explore:'Just exploring',
+      lead_form_schedule: 'Select a preferred day and time for us to contact you.',
+      lead_form_morning:  'Morning (9am\u201312pm)',
+      lead_form_afternoon:'Afternoon (12pm\u20134pm)',
+      lead_form_evening:  'Evening (4pm\u20137pm)',
+      lead_form_submit:   'START MY JOURNEY',
+      lead_form_thanks:  'We will contact you via WhatsApp within your selected time.',
+      lead_form_thanks_sub:'A member of our team will reach out to discuss your property\u2019s potential.',
+    },
+
+    es: {
+      nav_tagline:    'Exclusivo para propietarios de CANA BAY.',
+      hero_eyebrow:   'Cana Bay\u00a0\u00b7\u00a0Punta Cana',
+      hero_headline:  'Cana Bay Es Premium.<br>Tu Propiedad Tambi\u00e9n Deber\u00eda Serlo.',
+      hero_sub:       'Gesti\u00f3n Airbnb para Cana Bay.',
+      hero_cta:       'AGENDAR UNA REUNI\u00d3N',
+      wa_text:        'Hola, estoy aquí para asistirte.',
+      footer_legal:   'NOVERTY opera de forma independiente y no est\u00e1 afiliado al desarrollo Cana Bay ni a su administraci\u00f3n. Todo el contenido es presentado por NOVERTY con fines informativos y promocionales \u00fanicamente. Cualquier uso, reproducci\u00f3n o distribuci\u00f3n no autorizada est\u00e1 estrictamente prohibida. NOVERTY &copy; 2026. Todos los derechos reservados.',
+      intro_heading:  'Cana Bay Est\u00e1 Construido para el Lifestyle.<br>Nosotros lo Construimos para el Rendimiento.',
+      intro_sub:      'La mayor\u00eda de las propiedades est\u00e1n listadas.<br>Muy pocas est\u00e1n optimizadas.',
+      lifestyle_heading: 'Construido Sobre Cana Bay',
+      lifestyle_sub:  'Beach club. Golf. Acceso privado.<br>Convertimos cada ventaja en mayores ingresos.',
+      exp_heading:    'Qu\u00e9 Hacer en Cana Bay',
+      exp_intro:      'Cana Bay no es solo una ubicaci\u00f3n.<br>Es una experiencia completa de lifestyle construida alrededor del Caribe.',
+      exp_explore:    'Explorar',
+      exp_b1_title:   'Beach Club Privado',
+      exp_b1_text:    'Un espacio exclusivo frente al mar con piscina infinita, terraza panor\u00e1mica y acceso privado a la playa.',
+      exp_b1_modal_title: 'Beach Club Privado',
+      exp_b1_modal_text:  'El coraz\u00f3n social de CANA BAY.\n\nUn entorno refinado frente al mar con piscina infinita, vistas panor\u00e1micas, acceso privado a la playa y una forma m\u00e1s elevada de pasar el d\u00eda.',
+      exp_b2_title:   'Golf de Campeonato',
+      exp_b2_text:    'Un campo de golf de 18 hoyos de campeonato dise\u00f1ado para juego de clase mundial.',
+      exp_b2_modal_title: 'Golf de Campeonato',
+      exp_b2_modal_text:  'Sede del Hard Rock Golf Club at Cana Bay, este campo de campeonato de 18 hoyos fue dise\u00f1ado por Nicklaus Golf y construido dentro del paisaje de la comunidad.',
+      exp_b3_title:   'Hard Rock Lifestyle',
+      exp_b3_text:    'Gastronom\u00eda, entretenimiento, casino y vida nocturna a minutos.',
+      exp_b3_modal_title: 'Hard Rock Lifestyle',
+      exp_b3_modal_text:  'Desde restaurantes y entretenimiento hasta casino y vida nocturna, la experiencia Hard Rock a\u00f1ade otra capa de energ\u00eda al entorno de Cana Bay.',
+      exp_b4_title:   'Wellness & Racquet Club',
+      exp_b4_text:    'Fitness, deportes de raqueta y vida activa integrados al estilo del resort.',
+      exp_b4_modal_title: 'Wellness & Racquet Club',
+      exp_b4_modal_text:  'Un lado activo de Cana Bay marcado por el movimiento, el bienestar y la energ\u00eda de club privado, con instalaciones de raqueta y un ritmo diario m\u00e1s equilibrado.',
+      exp_final:      'Y eso es exactamente lo que optimizamos.',
+      excl_heading:   'No Gestionamos en Todas Partes.<br>Dominamos Donde Importa.',
+      excl_sub:       'Enfocados exclusivamente en Cana Bay.',
+      emo_heading:    'Eres Propietario en Cana Bay.<br>Hacemos Que Rinda Como Debe.',
+      emo_sub:        'Sin estr\u00e9s. Sin ruido operativo. Solo rendimiento dentro de Cana Bay.',
+      lead_notice:    'Esto es exclusivo para propietarios de Cana Bay.',
+
+      sf_intro_q:     'Exploremos el<br><em>potencial de tu propiedad.</em>',
+      sf_intro_sub:   'Te haremos algunas preguntas para entender tus objetivos y mostrarte lo que es posible con gesti\u00f3n profesional.',
+      sf_q1:          '\u00bfC\u00f3mo te llamas?',
+      sf_q2:          '\u00bfCu\u00e1l es tu email?',
+      sf_q3:          '\u00bfTu n\u00famero de tel\u00e9fono?',
+      sf_q4:          '\u00bfQu\u00e9 tipo de propiedad tienes?',
+      sf_q5:          '\u00bfTu propiedad est\u00e1 listada actualmente?',
+      sf_q6:          '\u00bfCu\u00e1ndo te gustar\u00eda comenzar?',
+      sf_q7:          'Nos pondremos en contacto para continuar el proceso.',
+      sf_consent_sub: '\u00bfEst\u00e1s de acuerdo?',
+      sf_thanks:      'Nos pondremos en contacto.',
+      sf_thanks_sub:  'Gracias por compartir tus objetivos. Un miembro de nuestro equipo se comunicar\u00e1 contigo pronto para hablar sobre el potencial de tu propiedad.',
+      sf_hint_choice: 'Selecciona la opci\u00f3n que mejor encaje',
+      sf_apartment:   'Apartamento / Condo',
+      sf_house:       'Casa / Villa',
+      sf_multiple:    'M\u00faltiples Propiedades',
+      sf_underperform:'S\u00ed, pero con bajo rendimiento',
+      sf_want_more:   'S\u00ed, va bien pero quiero m\u00e1s',
+      sf_not_listed:  'A\u00fan no est\u00e1 listada',
+      sf_exploring:   'Solo explorando opciones',
+      sf_asap:        'Lo antes posible',
+      sf_1m:          'En un mes',
+      sf_3m:          'En 3 meses',
+      sf_explore:     'Solo explorando',
+
+      sf_begin:       'COMENZAR',
+      sf_continue:    'CONTINUAR',
+      sf_accept:      'ACEPTAR',
+      sf_consent_yes: 'S\u00cd, ACEPTO',
+      sf_close_btn:   'CERRAR',
+      how_label:      '02 \u2014 C\u00f3mo Funciona',
+      how_heading:    'C\u00f3mo Funciona',
+      how_s1_title:   'An\u00e1lisis y Estrategia',
+      how_s1_text:    'Dise\u00f1amos gesti\u00f3n Airbnb en Punta Cana adaptada a tu propiedad en Cana Bay y a la din\u00e1mica del mercado.',
+      how_s2_title:   'Configuraci\u00f3n y Lanzamiento',
+      how_s2_text:    'Optimizamos y listamos tu propiedad para m\u00e1xima visibilidad y posicionamiento premium.',
+      how_s3_title:   'Gesti\u00f3n y Optimizaci\u00f3n',
+      how_s3_text:    'Nos encargamos de las operaciones y mejoramos el rendimiento continuamente.',
+      metrics_heading:'No Todas las Propiedades en Cana Bay<br>Rinden Igual.',
+      metrics_intro:  'Esa diferencia no es la propiedad.<br>Es el sistema detr\u00e1s de ella.',
+      metrics_m1:     'Optimizaci\u00f3n de Ocupaci\u00f3n',
+      metrics_m2:     'Rendimiento de Ingresos',
+      metrics_m3:     'Experiencia del Hu\u00e9sped',
+      metrics_v3:     '03',
+      perf_lead:      'Aqu\u00ed es donde la mayor\u00eda de las propiedades se quedan cortas.',
+      perf_b1_title:  'Optimizaci\u00f3n de Ocupaci\u00f3n',
+      perf_b1_text:   'Reservas maximizadas mediante precios y timing.',
+      perf_b2_title:  'Rendimiento de Ingresos',
+      perf_b2_text:   'Tarifas por noche m\u00e1s altas mediante posicionamiento.',
+      perf_b3_title:  'Experiencia del Hu\u00e9sped',
+      perf_b3_text:   'Estancias consistentes que sostienen el rendimiento.',
+      why_heading:    'El Sistema de Rendimiento Cana Bay',
+      why_b1_title:   'Posicionamiento',
+      why_b1_text:    'Transformamos tu propiedad en Cana Bay en un activo de alto rendimiento.',
+      why_b2_title:   'Ingenier\u00eda de Ingresos',
+      why_b2_text:    'Precios din\u00e1micos y control de demanda adaptados al comportamiento de ocupaci\u00f3n de Cana Bay.',
+      why_b3_title:   'Control Operativo',
+      why_b3_text:    'Ejecuci\u00f3n integral dentro de un entorno de alta demanda.',
+      cta_heading:    'Tu Propiedad en Cana Bay Deber\u00eda Estar Rindiendo.',
+      cta_sub:        'Convi\u00e9rtela en una fuente real de ingresos.',
+      cta_btn:        'Obt\u00e9n Tu Proyecci\u00f3n',
+      lead_label:     '06 \u2014 Liderazgo',
+      lead_name:      'Amarantha Gomez',
+      lead_role:      'Fundadora & CEO \u2014 NOVERTY',
+      lead_heading:   'Detr\u00e1s de la Marca',
+      lead_bio:       '<p>Con m\u00e1s de 8 a\u00f1os de experiencia en el espacio de alquiler a corto plazo y propiedades de lujo en Punta Cana, Amarantha Gomez ha construido una reputaci\u00f3n por entregar resultados consistentes y de alto rendimiento.</p><p>Su trayectoria incluye trabajo con nombres reconocidos como Luxury Homes y Grupo Punta Cana, desarrollando un profundo entendimiento tanto del lado operativo como estrat\u00e9gico de la gesti\u00f3n de propiedades.</p><p>Hoy, a trav\u00e9s de la gesti\u00f3n de propiedades en Cana Bay de Noverty, su enfoque va m\u00e1s all\u00e1 de simplemente gestionar propiedades. El objetivo es claro: convertir cada activo en una inversi\u00f3n de alto rendimiento mediante estrategia inteligente, posicionamiento refinado y un enfoque orientado a resultados.</p><p>Porque esto no se trata de que alguien cuide tu propiedad.</p><p>Se trata de rendimiento.<br>Se trata de resultados.<br>Se trata de ingresos reales \u2014 dinero en tu cuenta bancaria.</p>',
+      lead_form_title:   'Exploremos el potencial de tu propiedad.',
+      lead_form_sub:     'Cu\u00e9ntanos sobre tu propiedad y objetivos. Te responderemos en menos de 24 horas.',
+      lead_form_name:    'Nombre Completo',
+      lead_form_phone:   'Tel\u00e9fono / WhatsApp',
+      lead_form_email:   'Email',
+      lead_form_type:    'Tipo de Propiedad',
+      lead_form_select:  'Seleccionar',
+      lead_form_opt_apt: 'Apartamento / Condo',
+      lead_form_opt_villa:'Villa / Casa',
+      lead_form_opt_ph:  'Penthouse',
+      lead_form_opt_multi:'M\u00faltiples Unidades',
+      lead_form_bedrooms:'Habitaciones',
+      lead_form_location:'Ubicaci\u00f3n de la Propiedad',
+      lead_form_status:  'Estado Actual',
+      lead_form_opt_listed:'Ya listada en Airbnb',
+      lead_form_opt_notlisted:'A\u00fan no listada',
+      lead_form_opt_other:'Listada en otra plataforma',
+      lead_form_readiness:'\u00bfTu propiedad est\u00e1 lista para alquiler a corto plazo?',
+      lead_form_r_listed: 'Ya est\u00e1 listada',
+      lead_form_r_ready:  'Lista pero no listada',
+      lead_form_r_prep:   'A\u00fan prepar\u00e1ndola',
+      lead_form_r_explore:'Solo explorando',
+      lead_form_timeline: '\u00bfCu\u00e1ndo te gustar\u00eda comenzar?',
+      lead_form_t_asap:   'Lo antes posible',
+      lead_form_t_30d:    'En 30 d\u00edas',
+      lead_form_t_3m:     '1\u20133 meses',
+      lead_form_t_explore:'Solo explorando',
+      lead_form_schedule: 'Selecciona un d\u00eda y horario preferido para contactarte.',
+      lead_form_morning:  'Ma\u00f1ana (9am\u201312pm)',
+      lead_form_afternoon:'Tarde (12pm\u20134pm)',
+      lead_form_evening:  'Noche (4pm\u20137pm)',
+      lead_form_submit:   'COMENZAR MI PROCESO',
+      lead_form_thanks:  'Te contactaremos por WhatsApp en el horario seleccionado.',
+      lead_form_thanks_sub:'Un miembro de nuestro equipo se comunicar\u00e1 contigo para hablar sobre el potencial de tu propiedad.',
+    }
+  };
+
+  var currentLang = 'en';
+
+  function applyLang(lang) {
+    currentLang = T[lang] ? lang : 'en';
+    var t = T[currentLang];
+
+    document.documentElement.lang = currentLang;
+    document.documentElement.setAttribute('data-lang', currentLang);
+
+    document.querySelectorAll('[data-i18n]').forEach(function (el) {
+      var key = el.getAttribute('data-i18n');
+      if (t[key] !== undefined) el.textContent = t[key];
+    });
+
+    document.querySelectorAll('[data-i18n-html]').forEach(function (el) {
+      var key = el.getAttribute('data-i18n-html');
+      if (t[key] !== undefined) el.innerHTML = t[key];
+    });
+  }
+
+  function t(key) {
+    return (T[currentLang] && T[currentLang][key]) || key;
+  }
+
+
+  /* ─── ENTRY: LANGUAGE SELECT → SITE ─── */
+  (function () {
+    var langScreen = document.getElementById('entryLang');
+    if (!langScreen) return;
+
+    document.body.classList.add('no-scroll');
+
+    function enterSite(lang) {
+      applyLang(lang);
+      langScreen.classList.add('entry--exiting');
+      document.body.classList.remove('no-scroll');
+      langScreen.addEventListener('transitionend', function () { langScreen.remove(); }, { once: true });
+    }
+
+    langScreen.querySelectorAll('.entry__lang').forEach(function (btn) {
+      btn.addEventListener('click', function () {
+        enterSite(btn.getAttribute('data-lang'));
+      });
+    });
+
+    document.addEventListener('keydown', function (e) {
+      if (e.key === 'Enter' || e.key === 'Escape') enterSite('en');
+    }, { once: true });
+  })();
+
+
+  /* ─── NAV ─── */
+  var nav = document.getElementById('nav');
+
+
+  /* ─── SCROLL REVEAL ─── */
+  var revealSelectors = [
+    '.problem__item',
+    '.solution__step',
+    '.property__card',
+    '.curated__layout',
+    '.curated__text',
+    '.curated__visual',
+    '.properties__header',
+    '.why__header',
+    '.why__block',
+    '.how__step',
+    '.cta__heading',
+    '.cta__sub',
+    '.cta__actions',
+  ];
+
+  var revealEls = document.querySelectorAll(revealSelectors.join(', '));
+
+  revealEls.forEach(function (el) {
+    el.classList.add('reveal');
+    var siblings = Array.from(el.parentNode.children).filter(function (c) {
+      return c.classList.contains(el.classList[0]);
+    });
+    var idx = siblings.indexOf(el);
+    if (idx > 0 && idx <= 4) {
+      el.classList.add('reveal-delay-' + idx);
+    }
+  });
+
+  var observer = new IntersectionObserver(
+    function (entries) {
+      entries.forEach(function (entry) {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+          observer.unobserve(entry.target);
+        }
+      });
+    },
+    { threshold: 0.12, rootMargin: '0px 0px -40px 0px' }
+  );
+
+  revealEls.forEach(function (el) { observer.observe(el); });
+
+
+  /* ─── SMOOTH ANCHOR SCROLL ─── */
+  document.querySelectorAll('a[href^="#"]').forEach(function (anchor) {
+    anchor.addEventListener('click', function (e) {
+      var target = document.querySelector(this.getAttribute('href'));
+      if (!target) return;
+      e.preventDefault();
+      var navH = nav ? nav.offsetHeight : 0;
+      var top = target.getBoundingClientRect().top + window.scrollY - navH;
+      window.scrollTo({ top: top, behavior: 'smooth' });
+    });
+  });
+
+
+  /* ─── EXPERIENCE MODAL ─── */
+  (function () {
+    var modal    = document.getElementById('expModal');
+    var backdrop = document.getElementById('expBackdrop');
+    var closeBtn = document.getElementById('expClose');
+    var titleEl  = document.getElementById('expTitle');
+    var textEl   = document.getElementById('expText');
+    var imageEl  = document.getElementById('expImage');
+    var cards    = document.querySelectorAll('.exp-card[data-exp]');
+    if (!modal || !cards.length) return;
+
+    var map = {
+      beach:    { title: 'exp_b1_modal_title', text: 'exp_b1_modal_text' },
+      golf:     { title: 'exp_b2_modal_title', text: 'exp_b2_modal_text' },
+      hardrock: { title: 'exp_b3_modal_title', text: 'exp_b3_modal_text' },
+      wellness: { title: 'exp_b4_modal_title', text: 'exp_b4_modal_text' }
+    };
+
+    function openModal(key) {
+      var cfg = map[key];
+      if (!cfg) return;
+      titleEl.textContent = t(cfg.title);
+      textEl.textContent  = t(cfg.text);
+      imageEl.setAttribute('data-theme', key);
+      modal.setAttribute('aria-hidden', 'false');
+      modal.classList.add('is-active');
+      document.body.classList.add('no-scroll');
+    }
+
+    function closeModal() {
+      modal.classList.remove('is-active');
+      modal.setAttribute('aria-hidden', 'true');
+      document.body.classList.remove('no-scroll');
+    }
+
+    cards.forEach(function (card) {
+      card.addEventListener('click', function () {
+        openModal(card.getAttribute('data-exp'));
+      });
+    });
+
+    if (closeBtn) closeBtn.addEventListener('click', closeModal);
+    if (backdrop) backdrop.addEventListener('click', closeModal);
+
+    document.addEventListener('keydown', function (e) {
+      if (e.key === 'Escape' && modal.classList.contains('is-active')) closeModal();
+    });
+  })();
+
+
+  /* ─── MULTI-STEP LEAD FORM ─── */
+  (function () {
+    var modal     = document.getElementById('leadModal');
+    var backdrop  = document.getElementById('leadBackdrop');
+    var closeBtn  = document.getElementById('leadClose');
+    var backBtn   = document.getElementById('leadBack');
+    var actionBtn = document.getElementById('leadAction');
+    var progress  = document.getElementById('leadProgress');
+    var ctaBtn    = document.querySelector('.hero__cta-btn');
+
+    if (!modal || !ctaBtn) return;
+
+    var TOTAL   = 9;
+    var current = 1;
+    var formData = {};
+
+    function updateUI() {
+      var done = current > TOTAL;
+      progress.style.width = done ? '100%' : ((current - 1) / TOTAL * 100) + '%';
+      backBtn.hidden = current <= 1 || done;
+
+      if (done) {
+        actionBtn.textContent = t('sf_close_btn');
+      } else if (current === TOTAL) {
+        actionBtn.textContent = t('lead_form_submit');
+      } else {
+        actionBtn.textContent = t('sf_continue');
+      }
+    }
+
+    function goToStep(n) {
+      var active = modal.querySelector('.lead-step.is-active');
+      var delay  = active ? 300 : 0;
+
+      if (active) {
+        active.classList.add('is-exiting');
+        active.classList.remove('is-active');
+        setTimeout(function () { active.classList.remove('is-exiting'); }, 300);
+      }
+
+      setTimeout(function () {
+        current = n;
+        var selector = n > TOTAL ? '[data-step="done"]' : '[data-step="' + n + '"]';
+        var next = modal.querySelector(selector);
+        if (next) {
+          next.classList.add('is-active');
+          var inp = next.querySelector('.lead-step__input');
+          if (inp) setTimeout(function () { inp.focus(); }, 60);
+        }
+        updateUI();
+      }, delay);
+    }
+
+    function advance() {
+      if (current > TOTAL) { closeModal(); return; }
+
+      var active = modal.querySelector('.lead-step.is-active');
+      if (!active) return;
+
+      var inp = active.querySelector('.lead-step__input');
+      if (inp) {
+        // Required fields: steps 1-3
+        if (current <= 3 && !inp.value.trim()) {
+          inp.classList.add('is-error');
+          setTimeout(function () { inp.classList.remove('is-error'); }, 700);
+          return;
+        }
+        if (inp.value.trim()) formData[inp.name] = inp.value.trim();
+      }
+
+      goToStep(current + 1);
+    }
+
+    function openModal() {
+      // Reset
+      modal.querySelectorAll('.lead-step').forEach(function (s) { s.classList.remove('is-active', 'is-exiting'); });
+      modal.querySelectorAll('.lead-step__input').forEach(function (i) {
+        if (i.tagName === 'SELECT') { i.selectedIndex = 0; }
+        else { i.value = ''; }
+      });
+      current = 1;
+      formData = {};
+
+      modal.classList.add('is-active');
+      modal.setAttribute('aria-hidden', 'false');
+      document.body.style.overflow = 'hidden';
+      goToStep(1);
+    }
+
+    function closeModal() {
+      modal.classList.remove('is-active');
+      modal.setAttribute('aria-hidden', 'true');
+      document.body.style.overflow = '';
+    }
+
+    ctaBtn.addEventListener('click', function (e) {
+      e.preventDefault();
+      openModal();
+    });
+
+    if (closeBtn) closeBtn.addEventListener('click', closeModal);
+    if (backdrop) backdrop.addEventListener('click', closeModal);
+    if (backBtn) backBtn.addEventListener('click', function () { if (current > 1) goToStep(current - 1); });
+    if (actionBtn) actionBtn.addEventListener('click', advance);
+
+    // Option buttons (readiness, timeline) — select + auto-advance
+    modal.querySelectorAll('.lead-step__opt').forEach(function (btn) {
+      btn.addEventListener('click', function () {
+        var step = btn.closest('.lead-step');
+        var name = btn.dataset.name;
+        formData[name] = btn.dataset.value;
+        step.querySelectorAll('.lead-step__opt').forEach(function (b) { b.classList.remove('is-selected'); });
+        btn.classList.add('is-selected');
+        setTimeout(function () { goToStep(current + 1); }, 340);
+      });
+    });
+
+    // Inline calendar (step 9)
+    (function () {
+      var calGrid     = document.getElementById('calGrid');
+      var calMonth    = document.getElementById('calMonth');
+      var calWeekdays = document.getElementById('calWeekdays');
+      var calPrev     = document.getElementById('calPrev');
+      var calNext     = document.getElementById('calNext');
+      var calInput    = document.getElementById('calDateInput');
+      if (!calGrid) return;
+
+      var today    = new Date();
+      var viewYear = today.getFullYear();
+      var viewMonth = today.getMonth();
+      var selectedDate = null;
+
+      var dayNames = { en: ['Su','Mo','Tu','We','Th','Fr','Sa'], es: ['Do','Lu','Ma','Mi','Ju','Vi','Sa'] };
+      var monthNames = {
+        en: ['January','February','March','April','May','June','July','August','September','October','November','December'],
+        es: ['Enero','Febrero','Marzo','Abril','Mayo','Junio','Julio','Agosto','Septiembre','Octubre','Noviembre','Diciembre']
+      };
+
+      function renderWeekdays() {
+        var lang = currentLang || 'en';
+        var names = dayNames[lang] || dayNames.en;
+        calWeekdays.innerHTML = names.map(function (d) { return '<span class="cal__weekday">' + d + '</span>'; }).join('');
+      }
+
+      function renderMonth() {
+        var lang = currentLang || 'en';
+        var names = monthNames[lang] || monthNames.en;
+        calMonth.textContent = names[viewMonth] + ' ' + viewYear;
+
+        var firstDay = new Date(viewYear, viewMonth, 1).getDay();
+        var daysInMonth = new Date(viewYear, viewMonth + 1, 0).getDate();
+        var html = '';
+
+        // Empty cells before first day
+        for (var e = 0; e < firstDay; e++) {
+          html += '<span class="cal__day is-empty"></span>';
+        }
+
+        for (var d = 1; d <= daysInMonth; d++) {
+          var date = new Date(viewYear, viewMonth, d);
+          var iso = viewYear + '-' + String(viewMonth + 1).padStart(2, '0') + '-' + String(d).padStart(2, '0');
+          var isPast = date < new Date(today.getFullYear(), today.getMonth(), today.getDate());
+          var isToday = date.toDateString() === today.toDateString();
+          var isSel = selectedDate === iso;
+          var cls = 'cal__day';
+          if (isPast) cls += ' is-past';
+          if (isToday) cls += ' is-today';
+          if (isSel) cls += ' is-selected';
+          html += '<button class="' + cls + '" type="button" data-date="' + iso + '">' + d + '</button>';
+        }
+
+        calGrid.innerHTML = html;
+      }
+
+      function render() { renderWeekdays(); renderMonth(); }
+
+      calGrid.addEventListener('click', function (e) {
+        var btn = e.target.closest('.cal__day');
+        if (!btn || btn.classList.contains('is-past') || btn.classList.contains('is-empty')) return;
+        selectedDate = btn.dataset.date;
+        if (calInput) { calInput.value = selectedDate; formData.preferred_date = selectedDate; }
+        renderMonth();
+      });
+
+      if (calPrev) calPrev.addEventListener('click', function () {
+        viewMonth--;
+        if (viewMonth < 0) { viewMonth = 11; viewYear--; }
+        render();
+      });
+
+      if (calNext) calNext.addEventListener('click', function () {
+        viewMonth++;
+        if (viewMonth > 11) { viewMonth = 0; viewYear++; }
+        render();
+      });
+
+      render();
+    })();
+
+    // Time slot selection (step 9)
+    modal.querySelectorAll('.lead-step__time').forEach(function (btn) {
+      btn.addEventListener('click', function () {
+        var step = btn.closest('.lead-step');
+        var hidden = step.querySelector('input[type="hidden"][name="preferred_time"]');
+        if (hidden) {
+          hidden.value = btn.dataset.value;
+          formData.preferred_time = btn.dataset.value;
+        }
+        step.querySelectorAll('.lead-step__time').forEach(function (b) { b.classList.remove('is-selected'); });
+        btn.classList.add('is-selected');
+      });
+    });
+
+    // Enter key advances
+    modal.addEventListener('keydown', function (e) {
+      if (e.key === 'Enter') { e.preventDefault(); advance(); }
+    });
+
+    document.addEventListener('keydown', function (e) {
+      if (e.key === 'Escape' && modal.classList.contains('is-active')) closeModal();
+    });
+  })();
+
+
+})();
+
+</script>
+</body>
+</html>
